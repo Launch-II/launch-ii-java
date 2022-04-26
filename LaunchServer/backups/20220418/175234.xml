@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Game>
+    <Users>
+        <User Name="Testing">
+            <IMEI>A7DE11DB45428B1C159D0D9A915C38D9C6C95A98551CBF449D8311A3AB2134D1</IMEI>
+            <PlayerID>1</PlayerID>
+            <BanState>0</BanState>
+            <NextBanTime>3600000</NextBanTime>
+            <BanDurationRemaining>0</BanDurationRemaining>
+            <BanReason/>
+            <LastIP>192.168.1.4</LastIP>
+            <LastConnectionMobile>false</LastConnectionMobile>
+            <LastChecked>1650169152007</LastChecked>
+            <LastCheckFailed>false</LastCheckFailed>
+            <CheckAPIFailed>false</CheckAPIFailed>
+            <Proscribed>false</Proscribed>
+            <CheckFailCode>0</CheckFailCode>
+            <ProfileMatch>true</ProfileMatch>
+            <BasicIntegrity>true</BasicIntegrity>
+            <Approved>false</Approved>
+            <Expired>0</Expired>
+            <DeviceHash>A77A11AB</DeviceHash>
+            <AppListHash>0B637C61</AppListHash>
+            <Reports/>
+        </User>
+        <User Name="Test1">
+            <IMEI>4F540EC7C56161C21C58089313278C1B4FCE3FFD773D5424489BB8DDB17B8D2B</IMEI>
+            <PlayerID>0</PlayerID>
+            <BanState>0</BanState>
+            <NextBanTime>3600000</NextBanTime>
+            <BanDurationRemaining>0</BanDurationRemaining>
+            <BanReason/>
+            <LastIP>192.168.1.9</LastIP>
+            <LastConnectionMobile>false</LastConnectionMobile>
+            <LastChecked>1650163820973</LastChecked>
+            <LastCheckFailed>false</LastCheckFailed>
+            <CheckAPIFailed>false</CheckAPIFailed>
+            <Proscribed>false</Proscribed>
+            <CheckFailCode>0</CheckFailCode>
+            <ProfileMatch>false</ProfileMatch>
+            <BasicIntegrity>false</BasicIntegrity>
+            <Approved>false</Approved>
+            <Expired>0</Expired>
+            <DeviceHash>5DD932F0</DeviceHash>
+            <AppListHash>6C805ED4</AppListHash>
+            <Reports/>
+        </User>
+    </Users>
+    <Alliances/>
+    <Treaties/>
+    <Players>
+        <Player ID="0" Name="Test1">
+            <Position>
+                <Latitude>37.552853</Latitude>
+                <Longitude>-122.02768</Longitude>
+            </Position>
+            <HP>0</HP>
+            <MaxHP>200</MaxHP>
+            <Avatar>-1</Avatar>
+            <Wealth>9959993</Wealth>
+            <LastSeen>1650248511667</LastSeen>
+            <StateChange>0</StateChange>
+            <AllianceID>-1</AllianceID>
+            <Flags1>0</Flags1>
+            <Flags2>0</Flags2>
+            <AllianceCooloffTime>0</AllianceCooloffTime>
+            <Kills>0</Kills>
+            <Deaths>1</Deaths>
+            <OffenceSpending>925</OffenceSpending>
+            <DefenceSpending>0</DefenceSpending>
+            <DamageInflicted>0</DamageInflicted>
+            <DamageReceived>329</DamageReceived>
+        </Player>
+        <Player ID="1" Name="Testing">
+            <Position>
+                <Latitude>41.393353</Latitude>
+                <Longitude>-84.12173</Longitude>
+            </Position>
+            <HP>200</HP>
+            <MaxHP>200</MaxHP>
+            <Avatar>-1</Avatar>
+            <Wealth>9349270</Wealth>
+            <LastSeen>1650318751908</LastSeen>
+            <StateChange>47485000</StateChange>
+            <AllianceID>-1</AllianceID>
+            <Flags1>24</Flags1>
+            <Flags2>0</Flags2>
+            <AllianceCooloffTime>0</AllianceCooloffTime>
+            <Kills>1</Kills>
+            <Deaths>0</Deaths>
+            <OffenceSpending>447050</OffenceSpending>
+            <DefenceSpending>0</DefenceSpending>
+            <DamageInflicted>329</DamageInflicted>
+            <DamageReceived>0</DamageReceived>
+            <InterceptorSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>15000</ReloadTime>
+                <SlotCount>6</SlotCount>
+                <Slots/>
+            </InterceptorSystem>
+            <MissileSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>15000</ReloadTime>
+                <SlotCount>3</SlotCount>
+                <Slots>
+                    <Slot Number="0" PrepTime="0" Type="11"/>
+                    <Slot Number="1" PrepTime="0" Type="11"/>
+                </Slots>
+            </MissileSystem>
+        </Player>
+    </Players>
+    <Missiles>
+        <Missile ID="6">
+            <Position>
+                <Latitude>65.58851</Latitude>
+                <Longitude>-107.02046</Longitude>
+            </Position>
+            <Type>7</Type>
+            <OwnerID>1</OwnerID>
+            <Tracking>false</Tracking>
+            <Target>
+                <Latitude>50.941734</Latitude>
+                <Longitude>129.27425</Longitude>
+            </Target>
+            <TargetID>0</TargetID>
+        </Missile>
+    </Missiles>
+    <Interceptors/>
+    <MissileSites>
+        <MissileSite ID="1" Name="">
+            <Position>
+                <Latitude>41.393345</Latitude>
+                <Longitude>-84.121765</Longitude>
+            </Position>
+            <HP>100</HP>
+            <MaxHP>100</MaxHP>
+            <OwnerID>1</OwnerID>
+            <Flags>-128</Flags>
+            <StateTime>0</StateTime>
+            <Nuclear>true</Nuclear>
+            <MissileSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>120000</ReloadTime>
+                <SlotCount>1</SlotCount>
+                <Slots>
+                    <Slot Number="0" PrepTime="2005000" Type="9"/>
+                </Slots>
+            </MissileSystem>
+            <ChargeOwnerTime>692000</ChargeOwnerTime>
+        </MissileSite>
+    </MissileSites>
+    <SAMSites/>
+    <SentryGuns/>
+    <OreMines>
+        <OreMine ID="0" Name="">
+            <Position>
+                <Latitude>37.249573</Latitude>
+                <Longitude>-122.2062</Longitude>
+            </Position>
+            <HP>100</HP>
+            <MaxHP>100</MaxHP>
+            <OwnerID>0</OwnerID>
+            <Flags>-128</Flags>
+            <StateTime>0</StateTime>
+            <ChargeOwnerTime>265000</ChargeOwnerTime>
+            <GenerateTime>2062000</GenerateTime>
+        </OreMine>
+    </OreMines>
+    <Loots>
+        <Loot ID="0">
+            <Position>
+                <Latitude>37.282124</Latitude>
+                <Longitude>-122.22174</Longitude>
+            </Position>
+            <Value>1624</Value>
+            <Expiry>9655151</Expiry>
+            <Description>Ore</Description>
+        </Loot>
+        <Loot ID="1">
+            <Position>
+                <Latitude>37.22596</Latitude>
+                <Longitude>-122.12841</Longitude>
+            </Position>
+            <Value>770</Value>
+            <Expiry>2418728</Expiry>
+            <Description>Ore</Description>
+        </Loot>
+        <Loot ID="2">
+            <Position>
+                <Latitude>37.21284</Latitude>
+                <Longitude>-122.17583</Longitude>
+            </Position>
+            <Value>2138</Value>
+            <Expiry>3063214</Expiry>
+            <Description>Ore</Description>
+        </Loot>
+        <Loot ID="3">
+            <Position>
+                <Latitude>37.24824</Latitude>
+                <Longitude>-122.11678</Longitude>
+            </Position>
+            <Value>1338</Value>
+            <Expiry>8162724</Expiry>
+            <Description>Ore</Description>
+        </Loot>
+        <Loot ID="4">
+            <Position>
+                <Latitude>37.222614</Latitude>
+                <Longitude>-122.218994</Longitude>
+            </Position>
+            <Value>1862</Value>
+            <Expiry>28101788</Expiry>
+            <Description>Ore</Description>
+        </Loot>
+        <Loot ID="5">
+            <Position>
+                <Latitude>37.20162</Latitude>
+                <Longitude>-122.24158</Longitude>
+            </Position>
+            <Value>3795</Value>
+            <Expiry>21492596</Expiry>
+            <Description>Ore</Description>
+        </Loot>
+        <Loot ID="6">
+            <Position>
+                <Latitude>37.285286</Latitude>
+                <Longitude>-122.134766</Longitude>
+            </Position>
+            <Value>2560</Value>
+            <Expiry>39648756</Expiry>
+            <Description>Ore</Description>
+        </Loot>
+        <Loot ID="7">
+            <Position>
+                <Latitude>37.235207</Latitude>
+                <Longitude>-122.20585</Longitude>
+            </Position>
+            <Value>4349</Value>
+            <Expiry>12040473</Expiry>
+            <Description>Ore</Description>
+        </Loot>
+        <Loot ID="8">
+            <Position>
+                <Latitude>37.552853</Latitude>
+                <Longitude>-122.02768</Longitude>
+            </Position>
+            <Value>47041</Value>
+            <Expiry>216627600</Expiry>
+            <Description>Rubble from Test1's missile site.</Description>
+        </Loot>
+        <Loot ID="9">
+            <Position>
+                <Latitude>37.25724</Latitude>
+                <Longitude>-122.22221</Longitude>
+            </Position>
+            <Value>4480</Value>
+            <Expiry>48540808</Expiry>
+            <Description>Ore</Description>
+        </Loot>
+        <Loot ID="10">
+            <Position>
+                <Latitude>37.242218</Latitude>
+                <Longitude>-122.22577</Longitude>
+            </Position>
+            <Value>4748</Value>
+            <Expiry>13787514</Expiry>
+            <Description>Ore</Description>
+        </Loot>
+    </Loots>
+    <Radiations>
+        <Radiation ID="0">
+            <Position>
+                <Latitude>52.483204</Latitude>
+                <Longitude>0.049400255</Longitude>
+            </Position>
+            <Radius>25.0</Radius>
+            <Expiry>85681604</Expiry>
+        </Radiation>
+        <Radiation ID="1">
+            <Position>
+                <Latitude>39.849274</Latitude>
+                <Longitude>-79.439026</Longitude>
+            </Position>
+            <Radius>11.0</Radius>
+            <Expiry>84851928</Expiry>
+        </Radiation>
+        <Radiation ID="2">
+            <Position>
+                <Latitude>37.552853</Latitude>
+                <Longitude>-122.02768</Longitude>
+            </Position>
+            <Radius>8.0</Radius>
+            <Expiry>122214788</Expiry>
+        </Radiation>
+        <Radiation ID="3">
+            <Position>
+                <Latitude>37.552853</Latitude>
+                <Longitude>-122.02768</Longitude>
+            </Position>
+            <Radius>25.0</Radius>
+            <Expiry>182480936</Expiry>
+        </Radiation>
+        <Radiation ID="4">
+            <Position>
+                <Latitude>37.552853</Latitude>
+                <Longitude>-122.02768</Longitude>
+            </Position>
+            <Radius>25.0</Radius>
+            <Expiry>168183544</Expiry>
+        </Radiation>
+    </Radiations>
+</Game>

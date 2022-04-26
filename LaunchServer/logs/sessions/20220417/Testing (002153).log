@@ -1,0 +1,4 @@
+002601 - Connection Report: Output TCP stream error sending 72 bytes: 
+002601 - Session error writing 72 bytes.
+002601 - Session closed after downloading 2119B & uploading 5255B.
+002601 - Session thread finished normally.

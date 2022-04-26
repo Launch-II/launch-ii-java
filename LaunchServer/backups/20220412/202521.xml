@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Game>
+    <Users>
+        <User Name="Adam Min">
+            <IMEI>14BDCD6FD64180AF5E7791DF91B6AF8E9A3E7BC844997EB8C29252706DF97CA5</IMEI>
+            <PlayerID>0</PlayerID>
+            <BanState>0</BanState>
+            <NextBanTime>3600000</NextBanTime>
+            <BanDurationRemaining>0</BanDurationRemaining>
+            <BanReason/>
+            <LastIP/>
+            <LastConnectionMobile>false</LastConnectionMobile>
+            <LastChecked>0</LastChecked>
+            <LastCheckFailed>false</LastCheckFailed>
+            <CheckAPIFailed>false</CheckAPIFailed>
+            <Proscribed>false</Proscribed>
+            <CheckFailCode>0</CheckFailCode>
+            <ProfileMatch>false</ProfileMatch>
+            <BasicIntegrity>false</BasicIntegrity>
+            <Approved>false</Approved>
+            <Expired>0</Expired>
+            <DeviceHash/>
+            <AppListHash/>
+            <Reports/>
+        </User>
+    </Users>
+    <Alliances/>
+    <Treaties/>
+    <Players>
+        <Player ID="0" Name="Adam Min">
+            <Position>
+                <Latitude>53.55</Latitude>
+                <Longitude>-1.1499983</Longitude>
+            </Position>
+            <HP>0</HP>
+            <MaxHP>200</MaxHP>
+            <Avatar>0</Avatar>
+            <Wealth>11000</Wealth>
+            <LastSeen>1528135630433</LastSeen>
+            <StateChange>3600000</StateChange>
+            <AllianceID>-1</AllianceID>
+            <Flags1>64</Flags1>
+            <Flags2>2</Flags2>
+            <AllianceCooloffTime>0</AllianceCooloffTime>
+            <Kills>0</Kills>
+            <Deaths>1</Deaths>
+            <OffenceSpending>0</OffenceSpending>
+            <DefenceSpending>0</DefenceSpending>
+            <DamageInflicted>0</DamageInflicted>
+            <DamageReceived>0</DamageReceived>
+        </Player>
+    </Players>
+    <Missiles/>
+    <Interceptors/>
+    <MissileSites/>
+    <SAMSites/>
+    <SentryGuns/>
+    <OreMines/>
+    <Loots/>
+    <Radiations/>
+</Game>

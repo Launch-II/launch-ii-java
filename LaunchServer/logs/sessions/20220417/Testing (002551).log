@@ -1,0 +1,4 @@
+002622 - Connection Report: Output TCP stream error sending 72 bytes: 
+002622 - Session error writing 72 bytes.
+002622 - Session closed after downloading 356B & uploading 1133B.
+002622 - Session thread finished normally.

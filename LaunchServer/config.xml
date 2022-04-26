@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<config>
+  <Port>30070</Port>
+  <ServerEmail>contact@ballisticgamesus.com</ServerEmail>
+  <DebugFlags>0</DebugFlags>
+  <StartingWealth>100000</StartingWealth>
+  <RespawnWealth>0</RespawnWealth>
+  <RespawnTime>3600000</RespawnTime>
+  <RespawnProtectionTime>172800000</RespawnProtectionTime>
+  <NoobProtectionTime>1209600000</NoobProtectionTime>
+  <HourlyWealth>350</HourlyWealth>
+  <CMSSystemCost>1500</CMSSystemCost>
+  <SAMSystemCost>1500</SAMSystemCost>
+  <CMSStructureCost>8000</CMSStructureCost>
+  <NCMSStructureCost>100000</NCMSStructureCost>
+  <SAMStructureCost>8000</SAMStructureCost>
+  <SentryGunStructureCost>1000</SentryGunStructureCost>
+  <OreMineStructureCost>5000</OreMineStructureCost>
+  <InterceptorBaseHitChance>0.5</InterceptorBaseHitChance>
+  <RubbleMinValue>0.4</RubbleMinValue>
+  <RubbleMaxValue>0.7</RubbleMaxValue>
+  <RubbleMinTime>172800000</RubbleMinTime>
+  <RubbleMaxTime>432000000</RubbleMaxTime>
+  <StructureSeparation>0.1</StructureSeparation>
+  <PlayerBaseHP>200</PlayerBaseHP>
+  <StructureBaseHP>200</StructureBaseHP>
+  <StructureBootTime>1800000</StructureBootTime>
+  <InitialCMSSlots>3</InitialCMSSlots>
+  <InitialSAMSlots>6</InitialSAMSlots>
+  <RequiredAccuracy>0.25</RequiredAccuracy>
+  <MaxRadiationTime>259200000</MaxRadiationTime>
+  <MinRadiationTime>86400000</MinRadiationTime>
+  <MissileSlotUpgradeBaseCost>250</MissileSlotUpgradeBaseCost>
+  <MissileSlotUpgradeCount>3</MissileSlotUpgradeCount>
+  <ResaleValue>0.8</ResaleValue>
+  <DecommissionTime>21600000</DecommissionTime>
+  <ReloadTimeBase>30000</ReloadTimeBase>
+  <ReloadTimeStage1>15000</ReloadTimeStage1>
+  <ReloadTimeStage2>7000</ReloadTimeStage2>
+  <ReloadTimeStage3>3000</ReloadTimeStage3>
+  <ReloadStage1Cost>500</ReloadStage1Cost>
+  <ReloadStage2Cost>1000</ReloadStage2Cost>
+  <ReloadStage3Cost>1500</ReloadStage3Cost>
+  <RepairSalvageDistance>0.1</RepairSalvageDistance>
+  <MissileSiteMaintenanceCost>100</MissileSiteMaintenanceCost>
+  <SAMSiteMaintenanceCost>75</SAMSiteMaintenanceCost>
+  <SentryGunMaintenanceCost>50</SentryGunMaintenanceCost>
+  <OreMineMaintenanceCost>50</OreMineMaintenanceCost>
+  <ChampionPrize>10000</ChampionPrize>
+  <VeteranPrizeMax>5000</VeteranPrizeMax>
+  <VeteranPrizeMin>500</VeteranPrizeMin>
+  <PointMultiplierFriendlyFire>-2</PointMultiplierFriendlyFire>
+  <PointsPerDamageHP>1.0</PointsPerDamageHP>
+  <PointsThreatManuallyIntercepted>50</PointsThreatManuallyIntercepted>
+  <PointsLootCollected>25</PointsLootCollected>
+  <PointsPlayerKilled>1000</PointsPlayerKilled>
+  <PointsStructureDestroyed>500</PointsStructureDestroyed>
+  <PointsDying>-500</PointsDying>
+  <HealthInterval>900000</HealthInterval>
+  <RadiationInterval>360000</RadiationInterval>
+  <PlayerRepairCost>100</PlayerRepairCost>
+  <StructureRepairCost>10</StructureRepairCost>
+  <AWOLTime>604800000</AWOLTime>
+  <RemoveTime>1209600000</RemoveTime>
+  <NukeUpgradeCost>10000000</NukeUpgradeCost>
+  <AllianceCooloffTime>43200000</AllianceCooloffTime>
+  <MissileNuclearCost>0</MissileNuclearCost>
+  <MissileTrackingCost>0</MissileTrackingCost>
+  <MissileECMCost>0</MissileECMCost>
+  <EMPChance>0.5</EMPChance>
+  <EMPRadiusMultiplier>2.5</EMPRadiusMultiplier>
+  <ECMInterceptorChanceReduction>0.2</ECMInterceptorChanceReduction>
+  <ManualInterceptorChanceIncrease>0.1</ManualInterceptorChanceIncrease>
+  <SentryGunReloadTime>3000</SentryGunReloadTime>
+  <SentryGunRange>0.8</SentryGunRange>
+  <SentryGunHitChance>0.3</SentryGunHitChance>
+  <OreMineRadius>4.0</OreMineRadius>
+  <OreCollectRadius>1.0</OreCollectRadius>
+  <OreCompeteRadius>10.0</OreCompeteRadius>
+  <MaxOreValue>5000</MaxOreValue>
+  <OreMineGenerateTime>1800000</OreMineGenerateTime>
+  <OreMinExpiry>14400000</OreMinExpiry>
+  <OreMaxExpiry>57600000</OreMaxExpiry>
+  <MissileSpeedIndexCost>100</MissileSpeedIndexCost>
+  <MissileSpeedIndexCostPow>1.5</MissileSpeedIndexCostPow>
+  <MissileRangeIndexCost>50</MissileRangeIndexCost>
+  <MissileRangeIndexCostPow>1</MissileRangeIndexCostPow>
+  <MissileBlastRadiusIndexCost>50</MissileBlastRadiusIndexCost>
+  <MissileBlastRadiusIndexCostPow>1</MissileBlastRadiusIndexCostPow>
+  <NukeBlastRadiusIndexCost>300</NukeBlastRadiusIndexCost>
+  <NukeBlastRadiusIndexCostPow>1</NukeBlastRadiusIndexCostPow>
+  <MissileMaxDamageIndexCost>100</MissileMaxDamageIndexCost>
+  <MissileMaxDamageIndexCostPow>1</MissileMaxDamageIndexCostPow>
+  <InterceptorSpeedIndexCost>50</InterceptorSpeedIndexCost>
+  <InterceptorSpeedIndexCostPow>1.75</InterceptorSpeedIndexCostPow>
+  <InterceptorRangeIndexCost>50</InterceptorRangeIndexCost>
+  <InterceptorRangeIndexCostPow>1.25</InterceptorRangeIndexCostPow>
+  <MissilePrepTimePerMagnitude>2</MissilePrepTimePerMagnitude>
+  <InterceptorPrepTimePerMagnitude>2</InterceptorPrepTimePerMagnitude>
+  <HourlyBonusDiplomaticPresence>50</HourlyBonusDiplomaticPresence>
+  <HourlyBonusPoliticalEngagement>25</HourlyBonusPoliticalEngagement>
+  <HourlyBonusDefenderOfTheNation>50</HourlyBonusDefenderOfTheNation>
+  <HourlyBonusNuclearSuperpower>200</HourlyBonusNuclearSuperpower>
+  <HourlyBonusWeeklyKillsBatch>200</HourlyBonusWeeklyKillsBatch>
+  <HourlyBonusSurvivor>50</HourlyBonusSurvivor>
+  <HourlyBonusHippy>150</HourlyBonusHippy>
+  <HourlyBonusPeaceMaker>10</HourlyBonusPeaceMaker>
+  <HourlyBonusWarMonger>100</HourlyBonusWarMonger>
+  <HourlyBonusLoneWolf>50</HourlyBonusLoneWolf>
+  <LoneWolfDistance>20.0</LoneWolfDistance>
+  <MissileSpeeds>
+    <MissileSpeed ID="1" Speed="900" /> 
+    <MissileSpeed ID="2" Speed="1000" />
+    <MissileSpeed ID="3" Speed="3000" />
+    <MissileSpeed ID="4" Speed="4000" />
+    <MissileSpeed ID="5" Speed="10000" />
+    <MissileSpeed ID="6" Speed="24000" />
+    <MissileSpeed ID="7" Speed="26000" />
+    <MissileSpeed ID="8" Speed="27000" />
+    <MissileSpeed ID="9" Speed="20000" />
+  </MissileSpeeds>
+  <MissileRanges>
+    <MissileRange ID="1" Range="321" />
+    <MissileRange ID="2" Range="1000" />
+    <MissileRange ID="3" Range="2500" />
+    <MissileRange ID="4" Range="3000" />
+    <MissileRange ID="5" Range="4500" />
+    <MissileRange ID="6" Range="10000" />
+    <MissileRange ID="7" Range="13000" />
+    <MissileRange ID="8" Range="15000" />
+    <MissileRange ID="9" Range="18000" />
+    <MissileRange ID="10" Range="200" />
+  </MissileRanges>
+  <MissileBlastRadii>
+    <MissileBlastRadius ID="1" BlastRadius="0.05" />
+    <MissileBlastRadius ID="2" BlastRadius="0.1" />
+    <MissileBlastRadius ID="3" BlastRadius="0.15" />
+  </MissileBlastRadii>
+  <NukeBlastRadii>
+    <NukeBlastRadius ID="1" BlastRadius="0.05" />
+    <NukeBlastRadius ID="2" BlastRadius="0.5" />
+    <NukeBlastRadius ID="3" BlastRadius="1.0" />
+    <NukeBlastRadius ID="4" BlastRadius="2.0" />
+    <NukeBlastRadius ID="5" BlastRadius="3.0" />
+    <NukeBlastRadius ID="6" BlastRadius="4.0" />
+    <NukeBlastRadius ID="7" BlastRadius="8.0" />
+    <NukeBlastRadius ID="8" BlastRadius="11.0" />
+    <NukeBlastRadius ID="9" BlastRadius="25.0" />
+  </NukeBlastRadii>
+  <MissileMaxDamages>
+    <MissileMaxDamage ID="1" MaxDamage="50" />
+    <MissileMaxDamage ID="2" MaxDamage="100" />
+    <MissileMaxDamage ID="3" MaxDamage="200" />
+    <MissileMaxDamage ID="4" MaxDamage="300" />
+    <MissileMaxDamage ID="5" MaxDamage="400" />
+    <MissileMaxDamage ID="6" MaxDamage="500" />
+  </MissileMaxDamages>
+  <InterceptorSpeeds>
+    <InterceptorSpeed ID="1" Speed="3000" />
+    <InterceptorSpeed ID="2" Speed="9000" />
+    <InterceptorSpeed ID="3" Speed="18000" />
+    <InterceptorSpeed ID="4" Speed="21000" />
+    <InterceptorSpeed ID="5" Speed="29000" />
+  </InterceptorSpeeds>
+  <InterceptorRanges>
+    <InterceptorRange ID="1" Range="25.0" />
+    <InterceptorRange ID="2" Range="300.0" />
+    <InterceptorRange ID="3" Range="400.0" />
+    <InterceptorRange ID="4" Range="1000.0" />
+    <InterceptorRange ID="5" Range="3000.0" />
+  </InterceptorRanges>
+  <MissileTypes>
+    <MissileType ID="1" Name="Tomahawk">
+      <AssetID>15</AssetID>
+      <Purchasable>true</Purchasable>
+      <SpeedIndex>1</SpeedIndex>
+      <MissileCost>800</MissileCost>
+      <BlastRadiusIndex>2</BlastRadiusIndex>
+      <RangeIndex>3</RangeIndex>
+      <MaxDamageIndex>3</MaxDamageIndex>
+      <Nuclear>false</Nuclear>
+      <Tracking>true</Tracking>
+      <ECM>true</ECM>
+    </MissileType>
+    <MissileType ID="2" Name="V2 Rocket">
+      <AssetID>18</AssetID>
+      <Purchasable>true</Purchasable>
+      <SpeedIndex>4</SpeedIndex>
+      <MissileCost>500</MissileCost>
+      <BlastRadiusIndex>1</BlastRadiusIndex>
+      <RangeIndex>1</RangeIndex>
+      <MaxDamageIndex>1</MaxDamageIndex>
+      <Nuclear>false</Nuclear>
+      <Tracking>false</Tracking>
+      <ECM>false</ECM>
+    </MissileType>
+    <MissileType ID="3" Name="Brahmos-II">
+      <AssetID>16</AssetID>
+      <Purchasable>true</Purchasable>
+      <SpeedIndex>5</SpeedIndex>
+      <MissileCost>1500</MissileCost>
+      <BlastRadiusIndex>2</BlastRadiusIndex>
+      <RangeIndex>2</RangeIndex>
+      <MaxDamageIndex>3</MaxDamageIndex>
+      <Nuclear>false</Nuclear>
+      <Tracking>true</Tracking>
+      <ECM>false</ECM>
+    </MissileType>
+    <MissileType ID="4" Name="Kalibr-M">
+      <AssetID>15</AssetID>
+      <Purchasable>true</Purchasable>
+      <SpeedIndex>3</SpeedIndex>
+      <MissileCost>1000</MissileCost>
+      <BlastRadiusIndex>2</BlastRadiusIndex>
+      <RangeIndex>4</RangeIndex>
+      <MaxDamageIndex>3</MaxDamageIndex>
+      <Nuclear>false</Nuclear>
+      <Tracking>true</Tracking>
+      <ECM>false</ECM>
+    </MissileType>
+    <MissileType ID="5" Name="DF-ZF">
+      <AssetID>16</AssetID>
+      <Purchasable>true</Purchasable>
+      <SpeedIndex>5</SpeedIndex>
+      <MissileCost>1000</MissileCost>
+      <BlastRadiusIndex>2</BlastRadiusIndex>
+      <RangeIndex>4</RangeIndex>
+      <MaxDamageIndex>3</MaxDamageIndex>
+      <Nuclear>false</Nuclear>
+      <Tracking>false</Tracking>
+      <ECM>false</ECM>
+    </MissileType>
+    <MissileType ID="6" Name="Popeye Turbo">
+      <AssetID>15</AssetID>
+      <Purchasable>true</Purchasable>
+      <SpeedIndex>3</SpeedIndex>
+      <MissileCost>800</MissileCost>
+      <BlastRadiusIndex>2</BlastRadiusIndex>
+      <RangeIndex>10</RangeIndex>
+      <MaxDamageIndex>1</MaxDamageIndex>
+      <Nuclear>false</Nuclear>
+      <Tracking>true</Tracking>
+      <ECM>false</ECM>
+    </MissileType>
+    <MissileType ID="7" Name="SM-62 Snark">
+      <AssetID>15</AssetID>
+      <Purchasable>true</Purchasable>
+      <SpeedIndex>2</SpeedIndex>
+      <MissileCost>2000</MissileCost>
+      <BlastRadiusIndex>3</BlastRadiusIndex>
+      <RangeIndex>6</RangeIndex>
+      <MaxDamageIndex>4</MaxDamageIndex>
+      <Nuclear>false</Nuclear>
+      <Tracking>false</Tracking>
+      <ECM>false</ECM>
+    </MissileType>
+    <MissileType ID="8" Name="Minuteman-III">
+      <AssetID>19</AssetID>
+      <Purchasable>true</Purchasable>
+      <SpeedIndex>6</SpeedIndex>
+      <MissileCost>65000</MissileCost>
+      <BlastRadiusIndex>7</BlastRadiusIndex>
+      <RangeIndex>7</RangeIndex>
+      <MaxDamageIndex>6</MaxDamageIndex>
+      <Nuclear>true</Nuclear>
+      <Tracking>false</Tracking>
+      <ECM>false</ECM>
+    </MissileType>
+    <MissileType ID="9" Name="RT-2PM Topol">
+      <AssetID>19</AssetID>
+      <Purchasable>true</Purchasable>
+      <SpeedIndex>7</SpeedIndex>
+      <MissileCost>50000</MissileCost>
+      <BlastRadiusIndex>8</BlastRadiusIndex>
+      <RangeIndex>6</RangeIndex>
+      <MaxDamageIndex>6</MaxDamageIndex>
+      <Nuclear>true</Nuclear>
+      <Tracking>false</Tracking>
+      <ECM>false</ECM>
+    </MissileType>
+    <MissileType ID="10" Name="DF-5">
+      <AssetID>19</AssetID>
+      <Purchasable>true</Purchasable>
+      <SpeedIndex>8</SpeedIndex>
+      <MissileCost>80000</MissileCost>
+      <BlastRadiusIndex>9</BlastRadiusIndex>
+      <RangeIndex>8</RangeIndex>
+      <MaxDamageIndex>6</MaxDamageIndex>
+      <Nuclear>true</Nuclear>
+      <Tracking>false</Tracking>
+      <ECM>false</ECM>
+    </MissileType>
+    <MissileType ID="11" Name="Jericho II">
+      <AssetID>20</AssetID>
+      <Purchasable>true</Purchasable>
+      <SpeedIndex>9</SpeedIndex>
+      <MissileCost>10000</MissileCost>
+      <BlastRadiusIndex>3</BlastRadiusIndex>
+      <RangeIndex>7</RangeIndex>
+      <MaxDamageIndex>4</MaxDamageIndex>
+      <Nuclear>false</Nuclear>
+      <Tracking>false</Tracking>
+      <ECM>false</ECM>
+    </MissileType>
+  </MissileTypes>
+  <InterceptorTypes>
+    <InterceptorType ID="31" Name="Aegis RIM-161">
+      <AssetID>11</AssetID>
+      <Purchasable>true</Purchasable>
+      <InterceptorCost>1000</InterceptorCost>
+      <SpeedIndex>4</SpeedIndex>
+      <RangeIndex>4</RangeIndex>
+    </InterceptorType>
+    <InterceptorType ID="32" Name="S-400 40N6E">
+      <AssetID>11</AssetID>
+      <Purchasable>true</Purchasable>
+      <InterceptorCost>800</InterceptorCost>
+      <SpeedIndex>3</SpeedIndex>
+      <RangeIndex>3</RangeIndex>
+    </InterceptorType>
+    <InterceptorType ID="33" Name="Akash">
+      <AssetID>11</AssetID>
+      <Purchasable>true</Purchasable>
+      <InterceptorCost>400</InterceptorCost>
+      <SpeedIndex>1</SpeedIndex>
+      <RangeIndex>1</RangeIndex>
+    </InterceptorType>
+    <InterceptorType ID="34" Name="David's Sling">
+      <AssetID>11</AssetID>
+      <Purchasable>true</Purchasable>
+      <InterceptorCost>600</InterceptorCost>
+      <SpeedIndex>2</SpeedIndex>
+      <RangeIndex>2</RangeIndex>
+    </InterceptorType>
+    <InterceptorType ID="35" Name="ABM GBI">
+      <AssetID>21</AssetID>
+      <Purchasable>true</Purchasable>
+      <InterceptorCost>15000</InterceptorCost>
+      <SpeedIndex>5</SpeedIndex>
+      <RangeIndex>5</RangeIndex>
+    </InterceptorType>
+  </InterceptorTypes>
+  <MajorBannedApps>
+    <MajorBannedApp Name="BlueStacks">
+      <Signature>com.uncube.account</Signature>
+      <Description>Android emulator</Description>
+    </MajorBannedApp>
+    <MajorBannedApp Name="MEmu">
+      <Signature>microvirt</Signature>
+      <Description>Android emulator</Description>
+    </MajorBannedApp>
+  </MajorBannedApps>
+  <MinorBannedApps>
+    <MinorBannedApp Name="Parallel Space">
+      <Signature>com.lbe.parallel.intl</Signature>
+      <Description>app cloner</Description>
+    </MinorBannedApp>
+    <MinorBannedApp Name="Parallel Space">
+      <Signature>com.parallel.space.lite</Signature>
+      <Description>app cloner</Description>
+    </MinorBannedApp>
+    <MinorBannedApp Name="App Cloner">
+      <Signature>com.applisto.appcloner</Signature>
+      <Description>self-descriptive</Description>
+    </MinorBannedApp>
+    <MinorBannedApp Name="Lexa Fake GPS">
+      <Signature>com.lexa.fakegps</Signature>
+      <Description>location spoofer</Description>
+    </MinorBannedApp>
+    <MinorBannedApp Name="Generic fake GPS">
+      <Signature>fakegps</Signature>
+      <Description>location spoofer</Description>
+    </MinorBannedApp>
+    <MinorBannedApp Name="Magisk">
+      <Signature>magisk</Signature>
+      <Description>allows location spoofing and multiaccounting</Description>
+    </MinorBannedApp>
+  </MinorBannedApps>
+</config>

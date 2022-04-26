@@ -1,0 +1,5 @@
+153523 - Connection Report: Output TCP stream error sending 82 bytes: 
+153523 - Session error writing 82 bytes.
+153523 - Session closed after downloading 7203B & uploading 171249B.
+153523 - Session thread finished normally.
+154253 - Not sending 9 bytes. The session is dead.

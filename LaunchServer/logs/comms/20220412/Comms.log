@@ -1,0 +1,77 @@
+165823 - Server socket established.
+165857 - Couldn't create socket: Address already in use: NET_Bind
+165857 - Server comms finished.
+165913 - Couldn't create socket: Address already in use: NET_Bind
+165913 - Server comms finished.
+170645 - Client connected, hash 442B34B8. Creating session.
+170646 - Client connected, hash 59FE686A. Creating session.
+181025 - Couldn't create socket: Address already in use: NET_Bind
+181025 - Server comms finished.
+181132 - Client connected, hash 4319E0BE. Creating session.
+181225 - Client connected, hash 647A308D. Creating session.
+181823 - Client connected, hash 653FC924. Creating session.
+181913 - Client connected, hash 4FA850D1. Creating session.
+182110 - Couldn't create socket: Address already in use: NET_Bind
+182110 - Server comms finished.
+182522 - Couldn't create socket: Address already in use: NET_Bind
+182522 - Server comms finished.
+182524 - Couldn't create socket: Address already in use: NET_Bind
+182524 - Server comms finished.
+183143 - Couldn't create socket: Address already in use: NET_Bind
+183143 - Server comms finished.
+183215 - Couldn't create socket: Address already in use: NET_Bind
+183215 - Server comms finished.
+183303 - Couldn't create socket: Address already in use: NET_Bind
+183303 - Server comms finished.
+183345 - Client connected, hash 43B8458A. Creating session.
+183359 - Couldn't create socket: Address already in use: NET_Bind
+183359 - Server comms finished.
+184102 - Client connected, hash 7673FB28. Creating session.
+184143 - Shut down instruction received...
+184143 - ...All sessions are closed.
+184147 - Shut down instruction received...
+184147 - ...All sessions are closed.
+184204 - Server socket established.
+184213 - Client connected, hash 6D1E7A2B. Creating session.
+184221 - Client connected, hash 0338F035. Creating session.
+184318 - Shut down instruction received...
+184318 - Closing session...
+184318 - ...All sessions are closed.
+184318 - Server comms finished.
+184326 - Server socket established.
+184328 - Client connected, hash 0338F035. Creating session.
+184521 - Shut down instruction received...
+184521 - ...All sessions are closed.
+184528 - Shut down instruction received...
+184528 - ...All sessions are closed.
+184530 - Shut down instruction received...
+184530 - ...All sessions are closed.
+184738 - Server socket established.
+184738 - Client connected, hash 1C7FFE50. Creating session.
+184739 - Client connected, hash 4E03DBCC. Creating session.
+184740 - Client connected, hash 70837F15. Creating session.
+184742 - Client connected, hash 07048D58. Creating session.
+184742 - Client connected, hash 6C94317A. Creating session.
+184747 - Client connected, hash 13AB4FEC. Creating session.
+184753 - Client connected, hash 0B345B46. Creating session.
+184758 - Client connected, hash 28F97935. Creating session.
+184802 - Client connected, hash 652B92B1. Creating session.
+184803 - Client connected, hash 2C3665D7. Creating session.
+184808 - Client connected, hash 0571F57C. Creating session.
+184813 - Client connected, hash 66221436. Creating session.
+184818 - Client connected, hash 5FA5BC59. Creating session.
+184823 - Client connected, hash 40A272A7. Creating session.
+184828 - Client connected, hash 4AF2B5DA. Creating session.
+184829 - Client connected, hash 60BD9181. Creating session.
+184946 - Client connected, hash 3C078B16. Creating session.
+185158 - Client connected, hash 4E32AFBB. Creating session.
+190256 - Client connected, hash 61281C09. Creating session.
+190304 - Client connected, hash 1D56CB90. Creating session.
+190311 - Client connected, hash 08EB01BF. Creating session.
+190422 - Client connected, hash 4255E185. Creating session.
+190755 - Client connected, hash 428A9DE2. Creating session.
+190758 - Client connected, hash 163AEDAB. Creating session.
+233958 - Server socket established.
+234030 - Client connected, hash 57D4E096. Creating session.
+234440 - Client connected, hash 3BB9B29F. Creating session.
+234454 - Client connected, hash 0B468B88. Creating session.
