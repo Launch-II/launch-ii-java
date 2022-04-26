@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <config>
-  <Port>30070</Port>
+  <Port>30069</Port>
   <ServerEmail>contact@ballisticgamesus.com</ServerEmail>
   <DebugFlags>0</DebugFlags>
   <StartingWealth>100000</StartingWealth>

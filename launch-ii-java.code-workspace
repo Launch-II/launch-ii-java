@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "LaunchClient"
+		},
+		{
+			"path": "LaunchGame"
+		},
+		{
+			"path": "LaunchServer"
+		},
+		{
+			"path": "TobComm"
+		}
+	]
+}
