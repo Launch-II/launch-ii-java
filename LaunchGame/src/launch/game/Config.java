@@ -15,7 +15,6 @@ import java.util.Map.Entry;
 import java.util.zip.CRC32;
 import launch.game.entities.MissileSite;
 import launch.game.entities.OreMine;
-import launch.game.entities.Player;
 import launch.game.entities.SAMSite;
 import launch.game.entities.SentryGun;
 import launch.game.entities.Structure;
@@ -28,7 +27,7 @@ import launch.utilities.LaunchUtilities;
  */
 public class Config
 {
-    protected static final int RULES_DATA_SIZE = 380 + (9 * 4);  //Rules, plus a 32-bit int count for each list.
+    protected static final int RULES_DATA_SIZE = 373 + (9 * 4);  //Rules, plus a 32-bit int count for each list.
 
     //Server-only, not communicated.
     protected int lPort;
@@ -100,8 +99,8 @@ public class Config
     protected float fltSentryGunRange;
     protected float fltSentryGunHitChance;
     protected float fltOreMineRadius;
-    protected float fltOreCollectRadius;
-    protected float fltOreCompeteRadius;
+    protected float fltOreCollectRadius; //added by Corbin +4 data size
+    protected float fltOreCompeteRadius; //added by Corbin +4 data size
     protected int lMaxOreValue;
     protected int lOreMineGenerateTime;
     protected int lOreMinExpiry;
@@ -948,6 +947,11 @@ public class Config
         if(type != null)
             return GetInterceptorCost(type);
         return Integer.MAX_VALUE;
+    }
+    
+    public float GetHitChance(InterceptorType type) 
+    { 
+        return type.GetHitChance(); 
     }
 
     public int GetMissilePrepTime(MissileType type)

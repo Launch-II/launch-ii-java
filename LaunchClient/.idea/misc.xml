@@ -10,13 +10,25 @@
       <map>
         <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/activity_purchase_launchable.xml" value="0.15" />
+        <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/button_purchase.xml" value="0.15896739130434784" />
         <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/control_missile_system.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/main_splash.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/view_settings.xml" value="0.33" />
+        <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/view_build.xml" value="0.25" />
+        <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/view_interceptor.xml" value="0.4083333333333333" />
+        <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/view_interceptor_selection.xml" value="0.33" />
+        <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/view_missile.xml" value="0.25" />
+        <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/view_player.xml" value="0.2" />
+        <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/view_player_interceptors.xml" value="0.2" />
+        <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/view_player_rank.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/view_players.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/view_privacy_zones.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/Corbin/Documents/NetBeansProjects/Launch/LaunchClient/app/src/main/res/layout/view_settings.xml" value="0.25" />
+        <entry key="..\:/Users/conta/Documents/GitHub/launch-ii-java/LaunchClient/app/src/main/res/layout/bottom_normal.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/conta/Documents/GitHub/launch-ii-java/LaunchClient/app/src/main/res/layout/main_normal.xml" value="0.286231884057971" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_12" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

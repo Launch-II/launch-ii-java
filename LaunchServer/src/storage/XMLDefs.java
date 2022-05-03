@@ -224,6 +224,7 @@ public class XMLDefs
     
     public static final String INTERCEPTOR_TYPE = "InterceptorType";
     public static final String INTERCEPTOR_COST = "InterceptorCost"; //Added by Corbin
+    public static final String INTERCEPTOR_HIT_CHANCE = "HitChance"; //Added by Corbin
     
     public static final String TYPE = "Type";
     public static final String TARGET = "Target";

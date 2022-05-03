@@ -13,16 +13,18 @@ import java.nio.ByteBuffer;
  */
 public class InterceptorType extends LaunchType
 {
-    private static final int DATA_SIZE = 6;
+    private static final int DATA_SIZE = 10;
     
     private byte cSpeedIndex;
     private byte cRangeIndex;
     private int cInterceptorCost;
+    private float cInterceptorHitChance;
     
-    public InterceptorType(byte cID, boolean bPurchasable, String strName, int lAssetID, int cInterceptorCost, byte cSpeedIndex, byte cRangeIndex)
+    public InterceptorType(byte cID, boolean bPurchasable, String strName, int lAssetID, int cInterceptorCost, float cInterceptorHitChance, byte cSpeedIndex, byte cRangeIndex)
     {
         super(cID, bPurchasable, strName, lAssetID);
         this.cInterceptorCost = cInterceptorCost;
+        this.cInterceptorHitChance = cInterceptorHitChance;
         this.cSpeedIndex = cSpeedIndex;
         this.cRangeIndex = cRangeIndex;
     }
@@ -31,6 +33,7 @@ public class InterceptorType extends LaunchType
     {
         super(bb);
         cInterceptorCost = bb.getInt();
+        cInterceptorHitChance = bb.getFloat();
         cSpeedIndex = bb.get();
         cRangeIndex = bb.get();
     }
@@ -44,6 +47,7 @@ public class InterceptorType extends LaunchType
         
         bb.put(cBaseData);
         bb.putInt(cInterceptorCost);
+        bb.putFloat(cInterceptorHitChance);
         bb.put(cSpeedIndex);
         bb.put(cRangeIndex);
         
@@ -55,6 +59,8 @@ public class InterceptorType extends LaunchType
     public byte GetRangeIndex() { return cRangeIndex; }
     
     public int GetInterceptorCost() { return cInterceptorCost; }
+    
+    public float GetHitChance() { return cInterceptorHitChance; }
 
     @Override
     public int GetFeatureMagnitude()

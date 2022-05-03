@@ -60,8 +60,8 @@ public class ClientDefs
     //Defaults.
 
     /* Live */
-    public static final String SETTINGS_SERVER_URL_DEFAULT = "www.counterforcegame.com";
-    public static int GetDefaultServerPort() { return 30070; }
+    public static final String SETTINGS_SERVER_URL_DEFAULT = "71.72.100.217";
+    public static int GetDefaultServerPort() { return 30069; }
 
     /* Debug */
     /*public static final String SETTINGS_SERVER_URL_DEFAULT = "192.168.0.54";
@@ -99,9 +99,9 @@ public class ClientDefs
     };
 
     //External applications and links
-    public static final String DISCORD_URL = "https://discord.gg/9cPZjwm";
-    public static final String WIKI_URL = "http://77.68.17.204/mediawiki/index.php/Main_Page";
-    public static final String PLAY_STORE_URL = "market://details?id=com.apps.fast.launch";
+    public static final String DISCORD_URL = "https://discord.gg/GDbfXyBQ";
+    public static final String WIKI_URL = "http://www.counterforcegame.com";
+    public static final String PLAY_STORE_URL = "market://details?id=com.apps.fast.counterforce";
 
     //The rest.
     public static final int NEAREST_ENTITY_COUNT = 3;

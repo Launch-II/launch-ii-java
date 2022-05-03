@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Game>
+    <Users>
+        <User Name="Test">
+            <IMEI>ED62A20B4409CEFE747BB41B9E69E972349FE7C64DF4CD311335B41264C5A31F</IMEI>
+            <PlayerID>1</PlayerID>
+            <BanState>0</BanState>
+            <NextBanTime>3600000</NextBanTime>
+            <BanDurationRemaining>0</BanDurationRemaining>
+            <BanReason/>
+            <LastIP>192.168.1.4</LastIP>
+            <LastConnectionMobile>false</LastConnectionMobile>
+            <LastChecked>1651279818006</LastChecked>
+            <LastCheckFailed>false</LastCheckFailed>
+            <CheckAPIFailed>false</CheckAPIFailed>
+            <Proscribed>false</Proscribed>
+            <CheckFailCode>0</CheckFailCode>
+            <ProfileMatch>true</ProfileMatch>
+            <BasicIntegrity>true</BasicIntegrity>
+            <Approved>false</Approved>
+            <Expired>0</Expired>
+            <DeviceHash>A77A11AB</DeviceHash>
+            <AppListHash>786811E1</AppListHash>
+            <Reports>
+                <Report>
+                    <TimeStart>1651338960018</TimeStart>
+                    <TimeEnd>1651338960018</TimeEnd>
+                    <Message>Give a warm, explosive welcome to Bisquick, who has joined the Game!</Message>
+                    <IsMajor>false</IsMajor>
+                    <LeftID>2</LeftID>
+                    <RightID>-1</RightID>
+                    <Times>1</Times>
+                    <Flags>0</Flags>
+                </Report>
+                <Report>
+                    <TimeStart>1651339044660</TimeStart>
+                    <TimeEnd>1651339044660</TimeEnd>
+                    <Message>Bisquick was awarded £1000000000. Reason: </Message>
+                    <IsMajor>true</IsMajor>
+                    <LeftID>2</LeftID>
+                    <RightID>-1</RightID>
+                    <Times>1</Times>
+                    <Flags>0</Flags>
+                </Report>
+                <Report>
+                    <TimeStart>1651339112848</TimeStart>
+                    <TimeEnd>1651339112848</TimeEnd>
+                    <Message>testing reports lol build the wall</Message>
+                    <IsMajor>true</IsMajor>
+                    <LeftID>-1</LeftID>
+                    <RightID>-1</RightID>
+                    <Times>1</Times>
+                    <Flags>0</Flags>
+                </Report>
+                <Report>
+                    <TimeStart>1651339125265</TimeStart>
+                    <TimeEnd>1651339125265</TimeEnd>
+                    <Message>Unfriendly player Bisquick constructed a nuclear missile silo within EMP attack range of you.</Message>
+                    <IsMajor>true</IsMajor>
+                    <LeftID>2</LeftID>
+                    <RightID>-1</RightID>
+                    <Times>1</Times>
+                    <Flags>0</Flags>
+                </Report>
+                <Report>
+                    <TimeStart>1651343718230</TimeStart>
+                    <TimeEnd>1651343718230</TimeEnd>
+                    <Message>Bisquick attacked you!</Message>
+                    <IsMajor>true</IsMajor>
+                    <LeftID>2</LeftID>
+                    <RightID>-1</RightID>
+                    <Times>1</Times>
+                    <Flags>0</Flags>
+                </Report>
+                <Report>
+                    <TimeStart>1651357870272</TimeStart>
+                    <TimeEnd>1651357870273</TimeEnd>
+                    <Message>You died of radiation poisoning.</Message>
+                    <IsMajor>true</IsMajor>
+                    <LeftID>1</LeftID>
+                    <RightID>-1</RightID>
+                    <Times>2</Times>
+                    <Flags>0</Flags>
+                </Report>
+            </Reports>
+        </User>
+        <User Name="Bisquick">
+            <IMEI>BE58DC73B330F9471BF10B4C4CE499DAA8F8A947FCA79AD1D4078CC417A7C0DB</IMEI>
+            <PlayerID>2</PlayerID>
+            <BanState>0</BanState>
+            <NextBanTime>3600000</NextBanTime>
+            <BanDurationRemaining>0</BanDurationRemaining>
+            <BanReason/>
+            <LastIP>192.168.1.4</LastIP>
+            <LastConnectionMobile>false</LastConnectionMobile>
+            <LastChecked>1651338969697</LastChecked>
+            <LastCheckFailed>false</LastCheckFailed>
+            <CheckAPIFailed>false</CheckAPIFailed>
+            <Proscribed>false</Proscribed>
+            <CheckFailCode>0</CheckFailCode>
+            <ProfileMatch>true</ProfileMatch>
+            <BasicIntegrity>true</BasicIntegrity>
+            <Approved>false</Approved>
+            <Expired>0</Expired>
+            <DeviceHash>A77A11AB</DeviceHash>
+            <AppListHash>9CAF2B35</AppListHash>
+            <Reports/>
+        </User>
+        <User Name="Biscuit">
+            <IMEI>40F224674D479514D8E2642E3E50C395BA0EF34CFBAEBB4EF20D6438CF6A490F</IMEI>
+            <PlayerID>0</PlayerID>
+            <BanState>0</BanState>
+            <NextBanTime>3600000</NextBanTime>
+            <BanDurationRemaining>0</BanDurationRemaining>
+            <BanReason/>
+            <LastIP>192.168.1.4</LastIP>
+            <LastConnectionMobile>false</LastConnectionMobile>
+            <LastChecked>1651071490811</LastChecked>
+            <LastCheckFailed>false</LastCheckFailed>
+            <CheckAPIFailed>false</CheckAPIFailed>
+            <Proscribed>false</Proscribed>
+            <CheckFailCode>0</CheckFailCode>
+            <ProfileMatch>true</ProfileMatch>
+            <BasicIntegrity>true</BasicIntegrity>
+            <Approved>false</Approved>
+            <Expired>0</Expired>
+            <DeviceHash>A77A11AB</DeviceHash>
+            <AppListHash>786811E1</AppListHash>
+            <Reports>
+                <Report>
+                    <TimeStart>1651279812800</TimeStart>
+                    <TimeEnd>1651279812800</TimeEnd>
+                    <Message>Give a warm, explosive welcome to Test, who has joined the Game!</Message>
+                    <IsMajor>false</IsMajor>
+                    <LeftID>1</LeftID>
+                    <RightID>-1</RightID>
+                    <Times>1</Times>
+                    <Flags>0</Flags>
+                </Report>
+                <Report>
+                    <TimeStart>1651338960018</TimeStart>
+                    <TimeEnd>1651338960018</TimeEnd>
+                    <Message>Give a warm, explosive welcome to Bisquick, who has joined the Game!</Message>
+                    <IsMajor>false</IsMajor>
+                    <LeftID>2</LeftID>
+                    <RightID>-1</RightID>
+                    <Times>1</Times>
+                    <Flags>0</Flags>
+                </Report>
+                <Report>
+                    <TimeStart>1651339044660</TimeStart>
+                    <TimeEnd>1651339044660</TimeEnd>
+                    <Message>Bisquick was awarded £1000000000. Reason: </Message>
+                    <IsMajor>true</IsMajor>
+                    <LeftID>2</LeftID>
+                    <RightID>-1</RightID>
+                    <Times>1</Times>
+                    <Flags>0</Flags>
+                </Report>
+                <Report>
+                    <TimeStart>1651339112848</TimeStart>
+                    <TimeEnd>1651339112848</TimeEnd>
+                    <Message>testing reports lol build the wall</Message>
+                    <IsMajor>true</IsMajor>
+                    <LeftID>-1</LeftID>
+                    <RightID>-1</RightID>
+                    <Times>1</Times>
+                    <Flags>0</Flags>
+                </Report>
+                <Report>
+                    <TimeStart>1651339125265</TimeStart>
+                    <TimeEnd>1651339125265</TimeEnd>
+                    <Message>Unfriendly player Bisquick constructed a nuclear missile silo within EMP attack range of you.</Message>
+                    <IsMajor>true</IsMajor>
+                    <LeftID>2</LeftID>
+                    <RightID>-1</RightID>
+                    <Times>1</Times>
+                    <Flags>0</Flags>
+                </Report>
+                <Report>
+                    <TimeStart>1651343718230</TimeStart>
+                    <TimeEnd>1651343718230</TimeEnd>
+                    <Message>Bisquick attacked you!</Message>
+                    <IsMajor>true</IsMajor>
+                    <LeftID>2</LeftID>
+                    <RightID>-1</RightID>
+                    <Times>1</Times>
+                    <Flags>0</Flags>
+                </Report>
+                <Report>
+                    <TimeStart>1651347679599</TimeStart>
+                    <TimeEnd>1651347679602</TimeEnd>
+                    <Message>You died of radiation poisoning.</Message>
+                    <IsMajor>true</IsMajor>
+                    <LeftID>0</LeftID>
+                    <RightID>-1</RightID>
+                    <Times>2</Times>
+                    <Flags>0</Flags>
+                </Report>
+            </Reports>
+        </User>
+    </Users>
+    <Alliances/>
+    <Treaties/>
+    <Players>
+        <Player ID="0" Name="Biscuit">
+            <Position>
+                <Latitude>41.3934</Latitude>
+                <Longitude>-84.12174</Longitude>
+            </Position>
+            <HP>0</HP>
+            <MaxHP>200</MaxHP>
+            <Avatar>-1</Avatar>
+            <Wealth>100000</Wealth>
+            <LastSeen>1651093583637</LastSeen>
+            <StateChange>0</StateChange>
+            <AllianceID>-1</AllianceID>
+            <Flags1>0</Flags1>
+            <Flags2>0</Flags2>
+            <AllianceCooloffTime>0</AllianceCooloffTime>
+            <Kills>0</Kills>
+            <Deaths>2</Deaths>
+            <OffenceSpending>0</OffenceSpending>
+            <DefenceSpending>0</DefenceSpending>
+            <DamageInflicted>0</DamageInflicted>
+            <DamageReceived>0</DamageReceived>
+        </Player>
+        <Player ID="1" Name="Test">
+            <Position>
+                <Latitude>41.39335</Latitude>
+                <Longitude>-84.1219</Longitude>
+            </Position>
+            <HP>0</HP>
+            <MaxHP>200</MaxHP>
+            <Avatar>-1</Avatar>
+            <Wealth>100000</Wealth>
+            <LastSeen>1651281119575</LastSeen>
+            <StateChange>0</StateChange>
+            <AllianceID>-1</AllianceID>
+            <Flags1>0</Flags1>
+            <Flags2>0</Flags2>
+            <AllianceCooloffTime>0</AllianceCooloffTime>
+            <Kills>0</Kills>
+            <Deaths>2</Deaths>
+            <OffenceSpending>0</OffenceSpending>
+            <DefenceSpending>0</DefenceSpending>
+            <DamageInflicted>0</DamageInflicted>
+            <DamageReceived>0</DamageReceived>
+        </Player>
+        <Player ID="2" Name="Bisquick">
+            <Position>
+                <Latitude>41.39335</Latitude>
+                <Longitude>-84.121765</Longitude>
+            </Position>
+            <HP>0</HP>
+            <MaxHP>200</MaxHP>
+            <Avatar>-1</Avatar>
+            <Wealth>999141800</Wealth>
+            <LastSeen>1651523880174</LastSeen>
+            <StateChange>0</StateChange>
+            <AllianceID>-1</AllianceID>
+            <Flags1>0</Flags1>
+            <Flags2>0</Flags2>
+            <AllianceCooloffTime>0</AllianceCooloffTime>
+            <Kills>0</Kills>
+            <Deaths>3</Deaths>
+            <OffenceSpending>843200</OffenceSpending>
+            <DefenceSpending>0</DefenceSpending>
+            <DamageInflicted>0</DamageInflicted>
+            <DamageReceived>0</DamageReceived>
+        </Player>
+    </Players>
+    <Missiles/>
+    <Interceptors/>
+    <MissileSites>
+        <MissileSite ID="0" Name="">
+            <Position>
+                <Latitude>41.18696</Latitude>
+                <Longitude>-84.09386</Longitude>
+            </Position>
+            <HP>750</HP>
+            <MaxHP>750</MaxHP>
+            <OwnerID>2</OwnerID>
+            <Flags>-128</Flags>
+            <StateTime>0</StateTime>
+            <Nuclear>true</Nuclear>
+            <MissileSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>30000</ReloadTime>
+                <SlotCount>1</SlotCount>
+                <Slots/>
+            </MissileSystem>
+            <ChargeOwnerTime>3004000</ChargeOwnerTime>
+        </MissileSite>
+    </MissileSites>
+    <SAMSites/>
+    <SentryGuns/>
+    <OreMines/>
+    <Loots/>
+    <Radiations>
+        <Radiation ID="0">
+            <Position>
+                <Latitude>41.360714</Latitude>
+                <Longitude>-83.02894</Longitude>
+            </Position>
+            <Radius>75.0</Radius>
+            <Expiry>123383816</Expiry>
+        </Radiation>
+        <Radiation ID="1">
+            <Position>
+                <Latitude>41.360714</Latitude>
+                <Longitude>-83.02894</Longitude>
+            </Position>
+            <Radius>50.0</Radius>
+            <Expiry>49707240</Expiry>
+        </Radiation>
+        <Radiation ID="2">
+            <Position>
+                <Latitude>41.360714</Latitude>
+                <Longitude>-83.02894</Longitude>
+            </Position>
+            <Radius>25.0</Radius>
+            <Expiry>95525904</Expiry>
+        </Radiation>
+        <Radiation ID="3">
+            <Position>
+                <Latitude>41.360714</Latitude>
+                <Longitude>-83.02894</Longitude>
+            </Position>
+            <Radius>12.5</Radius>
+            <Expiry>134586296</Expiry>
+        </Radiation>
+        <Radiation ID="4">
+            <Position>
+                <Latitude>40.446873</Latitude>
+                <Longitude>-83.02581</Longitude>
+            </Position>
+            <Radius>24.0</Radius>
+            <Expiry>79675968</Expiry>
+        </Radiation>
+        <Radiation ID="5">
+            <Position>
+                <Latitude>40.446873</Latitude>
+                <Longitude>-83.02581</Longitude>
+            </Position>
+            <Radius>16.0</Radius>
+            <Expiry>143064712</Expiry>
+        </Radiation>
+        <Radiation ID="6">
+            <Position>
+                <Latitude>40.446873</Latitude>
+                <Longitude>-83.02581</Longitude>
+            </Position>
+            <Radius>8.0</Radius>
+            <Expiry>39410820</Expiry>
+        </Radiation>
+        <Radiation ID="7">
+            <Position>
+                <Latitude>40.446873</Latitude>
+                <Longitude>-83.02581</Longitude>
+            </Position>
+            <Radius>4.0</Radius>
+            <Expiry>89647728</Expiry>
+        </Radiation>
+        <Radiation ID="8">
+            <Position>
+                <Latitude>39.943584</Latitude>
+                <Longitude>-83.20783</Longitude>
+            </Position>
+            <Radius>33.0</Radius>
+            <Expiry>139109080</Expiry>
+        </Radiation>
+        <Radiation ID="9">
+            <Position>
+                <Latitude>39.943584</Latitude>
+                <Longitude>-83.20783</Longitude>
+            </Position>
+            <Radius>22.0</Radius>
+            <Expiry>130040776</Expiry>
+        </Radiation>
+        <Radiation ID="10">
+            <Position>
+                <Latitude>39.943584</Latitude>
+                <Longitude>-83.20783</Longitude>
+            </Position>
+            <Radius>11.0</Radius>
+            <Expiry>43516860</Expiry>
+        </Radiation>
+        <Radiation ID="11">
+            <Position>
+                <Latitude>39.943584</Latitude>
+                <Longitude>-83.20783</Longitude>
+            </Position>
+            <Radius>5.5</Radius>
+            <Expiry>2949511</Expiry>
+        </Radiation>
+        <Radiation ID="12">
+            <Position>
+                <Latitude>39.98321</Latitude>
+                <Longitude>-85.68373</Longitude>
+            </Position>
+            <Radius>75.0</Radius>
+            <Expiry>89887568</Expiry>
+        </Radiation>
+        <Radiation ID="13">
+            <Position>
+                <Latitude>39.98321</Latitude>
+                <Longitude>-85.68373</Longitude>
+            </Position>
+            <Radius>50.0</Radius>
+            <Expiry>168807160</Expiry>
+        </Radiation>
+        <Radiation ID="14">
+            <Position>
+                <Latitude>39.98321</Latitude>
+                <Longitude>-85.68373</Longitude>
+            </Position>
+            <Radius>25.0</Radius>
+            <Expiry>16330456</Expiry>
+        </Radiation>
+        <Radiation ID="15">
+            <Position>
+                <Latitude>39.98321</Latitude>
+                <Longitude>-85.68373</Longitude>
+            </Position>
+            <Radius>12.5</Radius>
+            <Expiry>51477412</Expiry>
+        </Radiation>
+        <Radiation ID="16">
+            <Position>
+                <Latitude>39.349052</Latitude>
+                <Longitude>-84.49814</Longitude>
+            </Position>
+            <Radius>75.0</Radius>
+            <Expiry>145274488</Expiry>
+        </Radiation>
+        <Radiation ID="17">
+            <Position>
+                <Latitude>39.349052</Latitude>
+                <Longitude>-84.49814</Longitude>
+            </Position>
+            <Radius>50.0</Radius>
+            <Expiry>41155288</Expiry>
+        </Radiation>
+        <Radiation ID="18">
+            <Position>
+                <Latitude>39.349052</Latitude>
+                <Longitude>-84.49814</Longitude>
+            </Position>
+            <Radius>25.0</Radius>
+            <Expiry>9107197</Expiry>
+        </Radiation>
+        <Radiation ID="19">
+            <Position>
+                <Latitude>39.349052</Latitude>
+                <Longitude>-84.49814</Longitude>
+            </Position>
+            <Radius>12.5</Radius>
+            <Expiry>5729828</Expiry>
+        </Radiation>
+        <Radiation ID="20">
+            <Position>
+                <Latitude>41.358532</Latitude>
+                <Longitude>-83.78754</Longitude>
+            </Position>
+            <Radius>75.0</Radius>
+            <Expiry>43042126</Expiry>
+        </Radiation>
+        <Radiation ID="21">
+            <Position>
+                <Latitude>41.358532</Latitude>
+                <Longitude>-83.78754</Longitude>
+            </Position>
+            <Radius>50.0</Radius>
+            <Expiry>69860716</Expiry>
+        </Radiation>
+        <Radiation ID="22">
+            <Position>
+                <Latitude>41.358532</Latitude>
+                <Longitude>-83.78754</Longitude>
+            </Position>
+            <Radius>25.0</Radius>
+            <Expiry>181734888</Expiry>
+        </Radiation>
+        <Radiation ID="23">
+            <Position>
+                <Latitude>41.358532</Latitude>
+                <Longitude>-83.78754</Longitude>
+            </Position>
+            <Radius>12.5</Radius>
+            <Expiry>48939488</Expiry>
+        </Radiation>
+        <Radiation ID="24">
+            <Position>
+                <Latitude>38.27858</Latitude>
+                <Longitude>-85.73303</Longitude>
+            </Position>
+            <Radius>33.0</Radius>
+            <Expiry>29223435</Expiry>
+        </Radiation>
+        <Radiation ID="25">
+            <Position>
+                <Latitude>38.27858</Latitude>
+                <Longitude>-85.73303</Longitude>
+            </Position>
+            <Radius>22.0</Radius>
+            <Expiry>128188120</Expiry>
+        </Radiation>
+        <Radiation ID="26">
+            <Position>
+                <Latitude>38.27858</Latitude>
+                <Longitude>-85.73303</Longitude>
+            </Position>
+            <Radius>11.0</Radius>
+            <Expiry>131158624</Expiry>
+        </Radiation>
+        <Radiation ID="27">
+            <Position>
+                <Latitude>38.27858</Latitude>
+                <Longitude>-85.73303</Longitude>
+            </Position>
+            <Radius>5.5</Radius>
+            <Expiry>83072388</Expiry>
+        </Radiation>
+        <Radiation ID="28">
+            <Position>
+                <Latitude>41.118023</Latitude>
+                <Longitude>-85.15757</Longitude>
+            </Position>
+            <Radius>33.0</Radius>
+            <Expiry>109637760</Expiry>
+        </Radiation>
+        <Radiation ID="29">
+            <Position>
+                <Latitude>41.118023</Latitude>
+                <Longitude>-85.15757</Longitude>
+            </Position>
+            <Radius>22.0</Radius>
+            <Expiry>157530168</Expiry>
+        </Radiation>
+        <Radiation ID="30">
+            <Position>
+                <Latitude>41.118023</Latitude>
+                <Longitude>-85.15757</Longitude>
+            </Position>
+            <Radius>11.0</Radius>
+            <Expiry>33846457</Expiry>
+        </Radiation>
+        <Radiation ID="31">
+            <Position>
+                <Latitude>41.118023</Latitude>
+                <Longitude>-85.15757</Longitude>
+            </Position>
+            <Radius>5.5</Radius>
+            <Expiry>124249504</Expiry>
+        </Radiation>
+        <Radiation ID="32">
+            <Position>
+                <Latitude>39.820763</Latitude>
+                <Longitude>-81.47783</Longitude>
+            </Position>
+            <Radius>75.0</Radius>
+            <Expiry>156895680</Expiry>
+        </Radiation>
+        <Radiation ID="33">
+            <Position>
+                <Latitude>39.820763</Latitude>
+                <Longitude>-81.47783</Longitude>
+            </Position>
+            <Radius>50.0</Radius>
+            <Expiry>87937844</Expiry>
+        </Radiation>
+        <Radiation ID="34">
+            <Position>
+                <Latitude>39.820763</Latitude>
+                <Longitude>-81.47783</Longitude>
+            </Position>
+            <Radius>25.0</Radius>
+            <Expiry>190471304</Expiry>
+        </Radiation>
+        <Radiation ID="35">
+            <Position>
+                <Latitude>39.820763</Latitude>
+                <Longitude>-81.47783</Longitude>
+            </Position>
+            <Radius>12.5</Radius>
+            <Expiry>157358104</Expiry>
+        </Radiation>
+        <Radiation ID="36">
+            <Position>
+                <Latitude>39.192657</Latitude>
+                <Longitude>-82.95062</Longitude>
+            </Position>
+            <Radius>24.0</Radius>
+            <Expiry>205830736</Expiry>
+        </Radiation>
+        <Radiation ID="37">
+            <Position>
+                <Latitude>39.192657</Latitude>
+                <Longitude>-82.95062</Longitude>
+            </Position>
+            <Radius>16.0</Radius>
+            <Expiry>137115936</Expiry>
+        </Radiation>
+        <Radiation ID="38">
+            <Position>
+                <Latitude>39.192657</Latitude>
+                <Longitude>-82.95062</Longitude>
+            </Position>
+            <Radius>8.0</Radius>
+            <Expiry>167701344</Expiry>
+        </Radiation>
+        <Radiation ID="39">
+            <Position>
+                <Latitude>39.192657</Latitude>
+                <Longitude>-82.95062</Longitude>
+            </Position>
+            <Radius>4.0</Radius>
+            <Expiry>187343904</Expiry>
+        </Radiation>
+        <Radiation ID="40">
+            <Position>
+                <Latitude>38.40775</Latitude>
+                <Longitude>-86.72985</Longitude>
+            </Position>
+            <Radius>75.0</Radius>
+            <Expiry>149523288</Expiry>
+        </Radiation>
+        <Radiation ID="41">
+            <Position>
+                <Latitude>38.40775</Latitude>
+                <Longitude>-86.72985</Longitude>
+            </Position>
+            <Radius>50.0</Radius>
+            <Expiry>113318224</Expiry>
+        </Radiation>
+        <Radiation ID="42">
+            <Position>
+                <Latitude>38.40775</Latitude>
+                <Longitude>-86.72985</Longitude>
+            </Position>
+            <Radius>25.0</Radius>
+            <Expiry>168227232</Expiry>
+        </Radiation>
+        <Radiation ID="43">
+            <Position>
+                <Latitude>38.40775</Latitude>
+                <Longitude>-86.72985</Longitude>
+            </Position>
+            <Radius>12.5</Radius>
+            <Expiry>193267216</Expiry>
+        </Radiation>
+        <Radiation ID="44">
+            <Position>
+                <Latitude>41.315998</Latitude>
+                <Longitude>-84.50079</Longitude>
+            </Position>
+            <Radius>75.0</Radius>
+            <Expiry>210711720</Expiry>
+        </Radiation>
+        <Radiation ID="45">
+            <Position>
+                <Latitude>41.315998</Latitude>
+                <Longitude>-84.50079</Longitude>
+            </Position>
+            <Radius>50.0</Radius>
+            <Expiry>104579140</Expiry>
+        </Radiation>
+        <Radiation ID="46">
+            <Position>
+                <Latitude>41.315998</Latitude>
+                <Longitude>-84.50079</Longitude>
+            </Position>
+            <Radius>25.0</Radius>
+            <Expiry>126131812</Expiry>
+        </Radiation>
+        <Radiation ID="47">
+            <Position>
+                <Latitude>41.315998</Latitude>
+                <Longitude>-84.50079</Longitude>
+            </Position>
+            <Radius>12.5</Radius>
+            <Expiry>69454615</Expiry>
+        </Radiation>
+    </Radiations>
+</Game>

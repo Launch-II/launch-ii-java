@@ -1411,6 +1411,14 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                                             .strokeWidth(0.0f);
 
                                     EMPMarkers.put(missile.GetID(), map.addCircle(circleEMP));
+
+                                    CircleOptions circleRAD = new CircleOptions()
+                                            .center(Utilities.GetLatLng(game.GetMissileTarget(missile)))
+                                            .radius(game.GetConfig().GetBlastRadius(type) * 3 * Defs.METRES_PER_KM) //"3" because this is the maximum radiation radius created upon nuclear strike as specified in LaunchServerGame "MissileExploded."
+                                            .fillColor(Utilities.ColourFromAttr(context, R.attr.RadiationColour))
+                                            .strokeWidth(0.0f);
+
+                                    RadiationMarkers.put(missile.GetID(), map.addCircle(circleRAD));
                                 }
                             }
                             else if (entity instanceof Interceptor)
@@ -1685,6 +1693,12 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                     .center(Utilities.GetLatLng(geoLocation))
                     .radius(game.GetConfig().GetBlastRadius(type) * game.GetConfig().GetEMPRadiusMultiplier() * Defs.METRES_PER_KM)
                     .fillColor(Utilities.ColourFromAttr(this, R.attr.EMPColour))
+                    .strokeWidth(0.0f)));
+
+            targetBlastRadii.add(map.addCircle(new CircleOptions()
+                    .center(Utilities.GetLatLng(geoLocation))
+                    .radius(game.GetConfig().GetBlastRadius(type) * 3 * Defs.METRES_PER_KM) //"3" because this is the maximum radiation radius created upon nuclear strike as specified in LaunchServerGame "MissileExploded."
+                    .fillColor(Utilities.ColourFromAttr(this, R.attr.RadiationColour))
                     .strokeWidth(0.0f)));
         }
 
@@ -2309,11 +2323,11 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                                     if (game.GetInteractionReady())
                                     {
                                             //Dotncarry memorial.
-                                            MarkerOptions opt = new MarkerOptions();
+                                            /*MarkerOptions opt = new MarkerOptions();
                                             opt.position(new LatLng(31.891461, -104.86071));
                                             opt.anchor(0.5f, 0.5f);
                                             opt.icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_texas_obelisk));
-                                            DotncarryMemorial = map.addMarker(opt);
+                                            DotncarryMemorial = map.addMarker(opt);*/ //DotnCarry memorial commented out of code by Corbin. Reason: DotnCarry memorial UI causes a crash if it is targeted by a missile.
 
                                             for (Player player : game.GetPlayers())
                                             {

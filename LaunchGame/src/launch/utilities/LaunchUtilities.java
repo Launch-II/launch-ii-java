@@ -121,6 +121,8 @@ public class LaunchUtilities
             bEntityTypeVisible = INTERCEPTORS_VISIBLE;
         else if(entity instanceof Loot)
             return LOOTS_VISIBLE; //Considered sideless.
+        else if(entity instanceof Radiation)
+            return true;
 
         if(bEntityTypeVisible)
         {

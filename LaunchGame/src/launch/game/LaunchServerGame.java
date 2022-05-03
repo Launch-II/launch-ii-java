@@ -301,7 +301,7 @@ public class LaunchServerGame extends LaunchGame implements LaunchServerGameInte
                     //Don't engage if the owner is AWOL or banned.
                     if(!sentryGunOwner.GetAWOL() && !sentryGunOwner.GetBanned_Server())
                     {
-                        //Engage players.
+                        //Engage players. -Corbin: stopped sentries from shooting players. Reinstated because it does help prevent alliance abuse. 
                         for(Player player : Players.values())
                         {
                             //Don't engage dead or respawn protected players.
@@ -478,17 +478,23 @@ public class LaunchServerGame extends LaunchGame implements LaunchServerGameInte
                     //Player is in a radioactive area.
                     if(GetRadioactive(player, true))
                     {
-                        //Damage them 1hp.
-                        player.InflictDamage(HP_PER_INTERVAL);
-                        LaunchLog.Log(LaunchLog.LogType.GAME, LOG_NAME, String.format("%s damaged a bit.", player.GetName()));
-
-                        //Send out event if they are dead.
-                        if(player.Destroyed())
+                        for(Radiation radiation : Radiations.values())
                         {
-                            CreateEvent(new LaunchEvent(String.format("%s died of radiation poisoning.", player.GetName()), SoundEffect.DEATH));
-                            CreateReport(player, new LaunchReport("You died of radiation poisoning.", true, player.GetID()));
-                            Scoring_Death(player);
-                            player.SetDead(config.GetRespawnTime());
+                            if(player.GetPosition().DistanceTo(radiation.GetPosition()) <= radiation.GetRadius())
+                            {
+                                //Damage them 1hp.
+                                player.InflictDamage(HP_PER_INTERVAL);
+                                LaunchLog.Log(LaunchLog.LogType.GAME, LOG_NAME, String.format("%s damaged a bit.", player.GetName()));
+
+                                //Send out event if they are dead.
+                                if(player.Destroyed())
+                                {
+                                    CreateEvent(new LaunchEvent(String.format("%s died of radiation poisoning.", player.GetName()), SoundEffect.DEATH));
+                                    CreateReport(player, new LaunchReport("You died of radiation poisoning.", true, player.GetID()));
+                                    Scoring_Death(player);
+                                    player.SetDead(config.GetRespawnTime());
+                                }
+                            }
                         }
                     }
                 }
@@ -1083,15 +1089,44 @@ public class LaunchServerGame extends LaunchGame implements LaunchServerGameInte
                                                     //Is the missile within this interceptor's range?
                                                     if(samSite.GetPosition().DistanceTo(missile.GetPosition()) <= config.GetInterceptorRange(interceptorType.GetRangeIndex()))
                                                     {
-                                                        //Is the interceptor fast enough?
-                                                        if(fltInterceptorSpeed > fltMissileSpeed)
-                                                        {
-                                                            if(candidateType != null)
+                                                        //If statement to prevent the game wasting expensive ABM interceptors on cheap missiles.                                 
+                                                        if(config.GetInterceptorCost(interceptorType) < 9999 || config.GetMissileCost(missileType) > 10000)
+                                                        {//Is the interceptor fast enough?
+                                                            if(fltInterceptorSpeed > fltMissileSpeed)
                                                             {
-                                                                //We already have a candidate. Is this cheaper or nearer?
-                                                                if(config.GetInterceptorCost(interceptorType) < config.GetInterceptorCost(candidateType))
+                                                                if(candidateType != null)
                                                                 {
-                                                                    //Cheaper. Accept if it can prosecute the missile.
+                                                                    //We already have a candidate. Is this cheaper or nearer?
+                                                                    if(config.GetInterceptorCost(interceptorType) < config.GetInterceptorCost(candidateType))
+                                                                    {
+                                                                        //Cheaper. Accept if it can prosecute the missile.
+                                                                        GeoCoord geoIntercept = missile.GetPosition().InterceptPoint(geoTarget, fltMissileSpeed, samSite.GetPosition(), fltInterceptorSpeed);
+                                                                        int lTimeToIntercept = GetTimeToTarget(samSite.GetPosition(), geoIntercept, fltInterceptorSpeed);
+
+                                                                        if(lTimeToIntercept < lMissileTimeToTarget)
+                                                                        {
+                                                                            candidateSite = samSite;
+                                                                            candidateType = interceptorType;
+                                                                            lCandidateTimeToIntercept = lTimeToIntercept;
+                                                                        }
+                                                                    }
+                                                                    else if(config.GetInterceptorCost(interceptorType) == config.GetInterceptorCost(candidateType))
+                                                                    {
+                                                                        //The same price. Accept if it can get there quicker.
+                                                                        GeoCoord geoIntercept = missile.GetPosition().InterceptPoint(geoTarget, fltMissileSpeed, samSite.GetPosition(), fltInterceptorSpeed);
+                                                                        int lTimeToIntercept = GetTimeToTarget(samSite.GetPosition(), geoIntercept, fltInterceptorSpeed);
+
+                                                                        if(lCandidateTimeToIntercept < lTimeToIntercept)
+                                                                        {
+                                                                            candidateSite = samSite;
+                                                                            candidateType = interceptorType;
+                                                                            lCandidateTimeToIntercept = lTimeToIntercept;
+                                                                        }
+                                                                    }
+                                                                }
+                                                                else
+                                                                {
+                                                                    //No current candidate. This is good enough if it can reach.
                                                                     GeoCoord geoIntercept = missile.GetPosition().InterceptPoint(geoTarget, fltMissileSpeed, samSite.GetPosition(), fltInterceptorSpeed);
                                                                     int lTimeToIntercept = GetTimeToTarget(samSite.GetPosition(), geoIntercept, fltInterceptorSpeed);
 
@@ -1101,32 +1136,6 @@ public class LaunchServerGame extends LaunchGame implements LaunchServerGameInte
                                                                         candidateType = interceptorType;
                                                                         lCandidateTimeToIntercept = lTimeToIntercept;
                                                                     }
-                                                                }
-                                                                else if(config.GetInterceptorCost(interceptorType) == config.GetInterceptorCost(candidateType))
-                                                                {
-                                                                    //The same price. Accept if it can get there quicker.
-                                                                    GeoCoord geoIntercept = missile.GetPosition().InterceptPoint(geoTarget, fltMissileSpeed, samSite.GetPosition(), fltInterceptorSpeed);
-                                                                    int lTimeToIntercept = GetTimeToTarget(samSite.GetPosition(), geoIntercept, fltInterceptorSpeed);
-
-                                                                    if(lCandidateTimeToIntercept < lTimeToIntercept)
-                                                                    {
-                                                                        candidateSite = samSite;
-                                                                        candidateType = interceptorType;
-                                                                        lCandidateTimeToIntercept = lTimeToIntercept;
-                                                                    }
-                                                                }
-                                                            }
-                                                            else
-                                                            {
-                                                                //No current candidate. This is good enough if it can reach.
-                                                                GeoCoord geoIntercept = missile.GetPosition().InterceptPoint(geoTarget, fltMissileSpeed, samSite.GetPosition(), fltInterceptorSpeed);
-                                                                int lTimeToIntercept = GetTimeToTarget(samSite.GetPosition(), geoIntercept, fltInterceptorSpeed);
-
-                                                                if(lTimeToIntercept < lMissileTimeToTarget)
-                                                                {
-                                                                    candidateSite = samSite;
-                                                                    candidateType = interceptorType;
-                                                                    lCandidateTimeToIntercept = lTimeToIntercept;
                                                                 }
                                                             }
                                                         }
@@ -1184,8 +1193,8 @@ public class LaunchServerGame extends LaunchGame implements LaunchServerGameInte
                 float fltDistance = player.GetPosition().DistanceTo(geoOrigin);
 
                 if(fltDistance <= fltBlastRadius)
-                {
-                    float fltDamageProportion = random.nextFloat() * (1.0f - (fltDistance / fltBlastRadius));
+                {   //Adjusted fltDamageProportion calculation to give a minimum damage of 10% max damage at ground zero. -Corbin
+                    float fltDamageProportion = (float) ((0.1 + random.nextFloat() * (1 - 0.1)) * (1.0f - (fltDistance / fltBlastRadius)));
                     short nDamage = (short)(((float)nMaxDamage * fltDamageProportion) + 0.5f);
                     short nDamageInflicted = player.InflictDamage(nDamage);
                     
@@ -1228,8 +1237,8 @@ public class LaunchServerGame extends LaunchGame implements LaunchServerGameInte
                 float fltDistance = structure.GetPosition().DistanceTo(geoOrigin);
 
                 if(fltDistance <= fltBlastRadius)
-                {
-                    float fltDamageProportion = random.nextFloat() * (1.0f - (fltDistance / fltBlastRadius));
+                {   //Adjusted fltDamageProportion calculation to give a minimum damage of 10% max damage at ground zero. -Corbin
+                    float fltDamageProportion = (float) ((0.1 + random.nextFloat() * (1 - 0.1)) * (1.0f - (fltDistance / fltBlastRadius)));
                     short nDamage = (short)(((float)nMaxDamage * fltDamageProportion) + 0.5f);
                     short nDamageInflicted = structure.InflictDamage(nDamage);
                     Player owner = GetPlayer(structure.GetOwnerID());
@@ -2234,7 +2243,10 @@ public class LaunchServerGame extends LaunchGame implements LaunchServerGameInte
         
         if(type.GetNuclear())
         {
-            CreateRadiation(missile.GetPosition().GetCopy(), fltBlastRadius);
+            CreateRadiation(missile.GetPosition().GetCopy(), (float) (3.0 * fltBlastRadius)); //If this number (3.0) is changed, also change "if(type.GetNuclear() && bConsiderEMP)" in LaunchGame to the same value so the game will include radiation in the threat check. Also change the values in MainActivity.java of the app, sections "TargetMissile" and "CreateEntityUI."
+            CreateRadiation(missile.GetPosition().GetCopy(), (float) (2.0 * fltBlastRadius));
+            CreateRadiation(missile.GetPosition().GetCopy(), (float) (1.0 * fltBlastRadius));
+            CreateRadiation(missile.GetPosition().GetCopy(), (float) (0.5 * fltBlastRadius));
             CreateEMPPulse(missile.GetPosition(), fltBlastRadius * config.GetEMPRadiusMultiplier(), missile.GetOwnerID());
         }
     }
@@ -2252,8 +2264,9 @@ public class LaunchServerGame extends LaunchGame implements LaunchServerGameInte
         Missile missile = Missiles.get(interceptor.GetTargetID());
         Player interceptorOwner = Players.get(interceptor.GetOwnerID());
         Player missileOwner = Players.get(missile.GetOwnerID());
+        InterceptorType interceptorType = config.GetInterceptorType(interceptor.GetType());
         
-        float fltHitChance = config.GetInterceptorBaseHitChance();
+        float fltHitChance = 1;//interceptorType.GetHitChance();
         
         if(interceptor.GetPlayerLaunched())
         {
@@ -2521,8 +2534,8 @@ public class LaunchServerGame extends LaunchGame implements LaunchServerGameInte
             LaunchLog.Log(LaunchLog.LogType.GAME, LOG_NAME, "...Affordable...");
 
             if(bNuclear)
-            {                                                                                                                                   //Made nuke silo HP 5x whatever structure base HP is. TODO: Add NukeSiloHealth to Config. -Corbin
-                MissileSite missileSite = new MissileSite(GetAtomicID(lMissileSiteIndex, MissileSites), player.GetPosition().GetCopy(), (short) (5 * config.GetStructureBaseHP()), (short) (5 * config.GetStructureBaseHP()), player.GetID(), player.GetRespawnProtected(), config.GetStructureBootTime(), config.GetReloadTimeBase(), config.GetInitialMissileSlotsNuclear(), bNuclear, CHARGE_INTERVAL);
+            {                                                                                                                                   //Made nuke silo HP 750. TODO: Add NukeSiloHealth to Config. -Corbin
+                MissileSite missileSite = new MissileSite(GetAtomicID(lMissileSiteIndex, MissileSites), player.GetPosition().GetCopy(), (short) 750, (short) 750, player.GetID(), player.GetRespawnProtected(), config.GetStructureBootTime(), config.GetReloadTimeBase(), config.GetInitialMissileSlotsNuclear(), bNuclear, CHARGE_INTERVAL);
                 AddMissileSite(missileSite);
                 EstablishStructureThreats(missileSite);
                 CreateEvent(new LaunchEvent(String.format("%s constructed a nuclear missile site.", player.GetName()), SoundEffect.CONSTRUCTION));
@@ -2552,8 +2565,8 @@ public class LaunchServerGame extends LaunchGame implements LaunchServerGameInte
                 }
             }
             else
-            {
-                MissileSite missileSite = new MissileSite(GetAtomicID(lMissileSiteIndex, MissileSites), player.GetPosition().GetCopy(), config.GetStructureBaseHP(), config.GetStructureBaseHP(), player.GetID(), player.GetRespawnProtected(), config.GetStructureBootTime(), config.GetReloadTimeBase(), config.GetInitialMissileSlots(), bNuclear, CHARGE_INTERVAL);
+            {                                                                                                                           //Made Missile Site health 350 HP. TODO: Add Missile Site health to Config. -Corbin
+                MissileSite missileSite = new MissileSite(GetAtomicID(lMissileSiteIndex, MissileSites), player.GetPosition().GetCopy(), (short) 350, (short) 350, player.GetID(), player.GetRespawnProtected(), config.GetStructureBootTime(), config.GetReloadTimeBase(), config.GetInitialMissileSlots(), bNuclear, CHARGE_INTERVAL);
                 AddMissileSite(missileSite);
                 EstablishStructureThreats(missileSite);
                 CreateEvent(new LaunchEvent(String.format("%s constructed a missile site.", player.GetName()), SoundEffect.CONSTRUCTION));
@@ -2571,8 +2584,8 @@ public class LaunchServerGame extends LaunchGame implements LaunchServerGameInte
         Player player = Players.get(lPlayerID);
         
         if(ValidateConstructionRequest(player, "SAM site", config.GetSAMStructureCost()))
-        {
-            SAMSite samSite = new SAMSite(GetAtomicID(lSAMSiteIndex, SAMSites), player.GetPosition().GetCopy(), config.GetStructureBaseHP(), config.GetStructureBaseHP(), player.GetID(), player.GetRespawnProtected(), config.GetStructureBootTime(), config.GetReloadTimeBase(), config.GetInitialInterceptorSlots(), CHARGE_INTERVAL);
+        {                                                                                                       //Made SAM health 250 HP. TODO: Add SAM site health to config. -Corbin
+            SAMSite samSite = new SAMSite(GetAtomicID(lSAMSiteIndex, SAMSites), player.GetPosition().GetCopy(), (short) 250, (short) 250, player.GetID(), player.GetRespawnProtected(), config.GetStructureBootTime(), config.GetReloadTimeBase(), config.GetInitialInterceptorSlots(), CHARGE_INTERVAL);
             AddSAMSite(samSite);
             EstablishStructureThreats(samSite);
 
@@ -2590,8 +2603,8 @@ public class LaunchServerGame extends LaunchGame implements LaunchServerGameInte
         Player player = Players.get(lPlayerID);
         
         if(ValidateConstructionRequest(player, "sentry gun", config.GetSentryGunStructureCost()))
-        {                                                                                                                  //Made Sentry Gun heath half of StructureBase HP. TODO: Add Sentry Gun health in Config. -Corbin     
-            SentryGun sentryGun = new SentryGun(GetAtomicID(lSentryGunIndex, SentryGuns), player.GetPosition().GetCopy(), (short) (0.5 * config.GetStructureBaseHP()), (short) (0.5 * config.GetStructureBaseHP()), player.GetID(), player.GetRespawnProtected(), config.GetStructureBootTime(), CHARGE_INTERVAL);
+        {                                                                                                                  //Made Sentry Gun heath 100 HP. TODO: Add Sentry Gun health in Config. -Corbin     
+            SentryGun sentryGun = new SentryGun(GetAtomicID(lSentryGunIndex, SentryGuns), player.GetPosition().GetCopy(), (short) 100, (short) 100, player.GetID(), player.GetRespawnProtected(), config.GetStructureBootTime(), CHARGE_INTERVAL);
             AddSentryGun(sentryGun);
             EstablishStructureThreats(sentryGun);
 

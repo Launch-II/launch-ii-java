@@ -1,0 +1,7 @@
+143949 - Session created.
+143949 - Session thread created.
+143949 - Connection Report: Session got TCP streams.
+144122 - Session timed out. Closing.
+144122 - Session thread finished normally.
+144122 - Session closed after downloading 172B & uploading 9B.
+144709 - Not sending 9 bytes. The session is dead.

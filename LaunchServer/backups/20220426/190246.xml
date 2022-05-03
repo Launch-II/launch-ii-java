@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Game>
+    <Users>
+        <User Name="Testy">
+            <IMEI>40F224674D479514D8E2642E3E50C395BA0EF34CFBAEBB4EF20D6438CF6A490F</IMEI>
+            <PlayerID>0</PlayerID>
+            <BanState>0</BanState>
+            <NextBanTime>3600000</NextBanTime>
+            <BanDurationRemaining>0</BanDurationRemaining>
+            <BanReason/>
+            <LastIP>192.168.1.4</LastIP>
+            <LastConnectionMobile>false</LastConnectionMobile>
+            <LastChecked>1650826900286</LastChecked>
+            <LastCheckFailed>false</LastCheckFailed>
+            <CheckAPIFailed>false</CheckAPIFailed>
+            <Proscribed>false</Proscribed>
+            <CheckFailCode>0</CheckFailCode>
+            <ProfileMatch>true</ProfileMatch>
+            <BasicIntegrity>true</BasicIntegrity>
+            <Approved>false</Approved>
+            <Expired>0</Expired>
+            <DeviceHash>A77A11AB</DeviceHash>
+            <AppListHash>786811E1</AppListHash>
+            <Reports/>
+        </User>
+    </Users>
+    <Alliances/>
+    <Treaties/>
+    <Players>
+        <Player ID="0" Name="Testy">
+            <Position>
+                <Latitude>41.393314</Latitude>
+                <Longitude>-84.121765</Longitude>
+            </Position>
+            <HP>200</HP>
+            <MaxHP>200</MaxHP>
+            <Avatar>-1</Avatar>
+            <Wealth>99775300</Wealth>
+            <LastSeen>1650997535226</LastSeen>
+            <StateChange>138262000</StateChange>
+            <AllianceID>-1</AllianceID>
+            <Flags1>24</Flags1>
+            <Flags2>0</Flags2>
+            <AllianceCooloffTime>0</AllianceCooloffTime>
+            <Kills>0</Kills>
+            <Deaths>0</Deaths>
+            <OffenceSpending>85900</OffenceSpending>
+            <DefenceSpending>0</DefenceSpending>
+            <DamageInflicted>0</DamageInflicted>
+            <DamageReceived>0</DamageReceived>
+            <InterceptorSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>30000</ReloadTime>
+                <SlotCount>3</SlotCount>
+                <Slots>
+                    <Slot Number="2" PrepTime="0" Type="35"/>
+                </Slots>
+            </InterceptorSystem>
+            <MissileSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>5000</ReloadTime>
+                <SlotCount>15</SlotCount>
+                <Slots>
+                    <Slot Number="5" PrepTime="0" Type="4"/>
+                    <Slot Number="6" PrepTime="0" Type="4"/>
+                    <Slot Number="7" PrepTime="0" Type="4"/>
+                    <Slot Number="8" PrepTime="0" Type="4"/>
+                    <Slot Number="9" PrepTime="0" Type="4"/>
+                    <Slot Number="10" PrepTime="0" Type="4"/>
+                    <Slot Number="11" PrepTime="0" Type="3"/>
+                    <Slot Number="12" PrepTime="0" Type="3"/>
+                    <Slot Number="13" PrepTime="0" Type="3"/>
+                    <Slot Number="14" PrepTime="0" Type="1"/>
+                </Slots>
+            </MissileSystem>
+        </Player>
+    </Players>
+    <Missiles/>
+    <Interceptors/>
+    <MissileSites>
+        <MissileSite ID="0" Name="">
+            <Position>
+                <Latitude>41.393364</Latitude>
+                <Longitude>-84.121735</Longitude>
+            </Position>
+            <HP>1000</HP>
+            <MaxHP>1000</MaxHP>
+            <OwnerID>0</OwnerID>
+            <Flags>-128</Flags>
+            <StateTime>0</StateTime>
+            <Nuclear>true</Nuclear>
+            <MissileSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>30000</ReloadTime>
+                <SlotCount>1</SlotCount>
+                <Slots/>
+            </MissileSystem>
+            <ChargeOwnerTime>1757000</ChargeOwnerTime>
+        </MissileSite>
+    </MissileSites>
+    <SAMSites/>
+    <SentryGuns/>
+    <OreMines/>
+    <Loots/>
+    <Radiations>
+        <Radiation ID="0">
+            <Position>
+                <Latitude>52.498333</Latitude>
+                <Longitude>-0.5417888</Longitude>
+            </Position>
+            <Radius>25.0</Radius>
+            <Expiry>94105804</Expiry>
+        </Radiation>
+    </Radiations>
+</Game>

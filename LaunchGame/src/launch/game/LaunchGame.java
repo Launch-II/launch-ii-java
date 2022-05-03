@@ -577,7 +577,7 @@ public abstract class LaunchGame implements LaunchEntityListener
      * @param lPlayerID The ID of the player to check.
      * @param geoTarget The target coordinates.
      * @param type The missile type ID.
-     * @param bConsiderEMP A boolean indicating whether the EMP radius of nukes should be considered as "threatening" in this context.
+     * @param bConsiderEMP A boolean indicating whether the EMP radius of nukes should be considered as "threatening" in this context. (In this particular instance, this has been changed to include the max radiation distance.
      * @param bConsiderRespawnProtection A boolean indicating whether respawn protected players or assets should be ignored.
      * @return 
      */
@@ -586,7 +586,9 @@ public abstract class LaunchGame implements LaunchEntityListener
         float fltThreatRadius = config.GetBlastRadius(type);
         
         if(type.GetNuclear() && bConsiderEMP)
-            fltThreatRadius *= config.GetEMPRadiusMultiplier();
+            fltThreatRadius *= 3; 
+        /*3 because that is the size of the largest radiation radius created in a nuclear strike as configured in if(type.GetNuclear()) of protected void MissileExploded(Missile missile) in LaunchServerGame.java.
+        Previously, 3 was instead config.GtEMPRadiusMultiplier, so the game wod not consider the now larger radiation radius when threat checking.*/
         
         Player player = GetPlayer(lPlayerID);
 

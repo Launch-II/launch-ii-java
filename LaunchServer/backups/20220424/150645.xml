@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Game>
+    <Users>
+        <User Name="Testy">
+            <IMEI>40F224674D479514D8E2642E3E50C395BA0EF34CFBAEBB4EF20D6438CF6A490F</IMEI>
+            <PlayerID>0</PlayerID>
+            <BanState>0</BanState>
+            <NextBanTime>3600000</NextBanTime>
+            <BanDurationRemaining>0</BanDurationRemaining>
+            <BanReason/>
+            <LastIP>192.168.1.4</LastIP>
+            <LastConnectionMobile>false</LastConnectionMobile>
+            <LastChecked>1650826900286</LastChecked>
+            <LastCheckFailed>false</LastCheckFailed>
+            <CheckAPIFailed>false</CheckAPIFailed>
+            <Proscribed>false</Proscribed>
+            <CheckFailCode>0</CheckFailCode>
+            <ProfileMatch>true</ProfileMatch>
+            <BasicIntegrity>true</BasicIntegrity>
+            <Approved>false</Approved>
+            <Expired>0</Expired>
+            <DeviceHash>A77A11AB</DeviceHash>
+            <AppListHash>786811E1</AppListHash>
+            <Reports/>
+        </User>
+    </Users>
+    <Alliances/>
+    <Treaties/>
+    <Players>
+        <Player ID="0" Name="Testy">
+            <Position>
+                <Latitude>41.394207</Latitude>
+                <Longitude>-84.121666</Longitude>
+            </Position>
+            <HP>200</HP>
+            <MaxHP>200</MaxHP>
+            <Avatar>-1</Avatar>
+            <Wealth>99880400</Wealth>
+            <LastSeen>1650827202983</LastSeen>
+            <StateChange>167063000</StateChange>
+            <AllianceID>-1</AllianceID>
+            <Flags1>16</Flags1>
+            <Flags2>0</Flags2>
+            <AllianceCooloffTime>0</AllianceCooloffTime>
+            <Kills>0</Kills>
+            <Deaths>0</Deaths>
+            <OffenceSpending>100</OffenceSpending>
+            <DefenceSpending>0</DefenceSpending>
+            <DamageInflicted>0</DamageInflicted>
+            <DamageReceived>0</DamageReceived>
+            <InterceptorSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>30000</ReloadTime>
+                <SlotCount>3</SlotCount>
+                <Slots>
+                    <Slot Number="2" PrepTime="0" Type="35"/>
+                </Slots>
+            </InterceptorSystem>
+        </Player>
+    </Players>
+    <Missiles/>
+    <Interceptors/>
+    <MissileSites>
+        <MissileSite ID="0" Name="">
+            <Position>
+                <Latitude>41.393364</Latitude>
+                <Longitude>-84.121735</Longitude>
+            </Position>
+            <HP>1000</HP>
+            <MaxHP>1000</MaxHP>
+            <OwnerID>0</OwnerID>
+            <Flags>-128</Flags>
+            <StateTime>0</StateTime>
+            <Nuclear>true</Nuclear>
+            <MissileSystem>
+                <ReloadRemaining>0</ReloadRemaining>
+                <ReloadTime>30000</ReloadTime>
+                <SlotCount>1</SlotCount>
+                <Slots>
+                    <Slot Number="0" PrepTime="0" Type="5"/>
+                </Slots>
+            </MissileSystem>
+            <ChargeOwnerTime>1758000</ChargeOwnerTime>
+        </MissileSite>
+    </MissileSites>
+    <SAMSites/>
+    <SentryGuns/>
+    <OreMines/>
+    <Loots/>
+    <Radiations/>
+</Game>

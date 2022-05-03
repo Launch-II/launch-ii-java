@@ -15,13 +15,13 @@ public class Defs
     
     public static int THE_GREAT_BIG_NOTHING = -1;   //Initialiser for properties indicating uninitialised/unassigned/doesn't have one/not in one/etc.
     
-    public static final int WEALTH_CAP = 100000; //TO DO: Move back to config in a major release.
+    public static final int WEALTH_CAP = 80000; //TO DO: Move back to config in a major release.
     
     public static final String LOCATION_AVATARS = "avatars";
     public static final String LOCATION_IMGASSETS = "imgassets";
     public static final String IMAGE_FILE_FORMAT = "%s/%d.png";
     
-    public static final short MAJOR_VERSION = 34;   //Clients must be compliant with the major version, or they won't be allowed to log in.
+    public static final short MAJOR_VERSION = 35;   //Clients must be compliant with the major version, or they won't be allowed to log in.
     public static final short MINOR_VERSION = 0;    //Clients with a lower minor version can log in, but will be advised to update.
     
     public static final int AVATAR_SIZE = 128;      //Total avatar size, including allegiance ring.

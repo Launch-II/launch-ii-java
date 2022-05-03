@@ -94,6 +94,7 @@ public class LaunchServer implements LaunchServerAppInterface, GameLoadSaveListe
         
         Config config = XMLGameLoader.LoadConfig(this, CONFIG_FILENAME);
         
+        
         if(config != null)
         {
             game = new LaunchServerGame(config, this, config.GetPort());

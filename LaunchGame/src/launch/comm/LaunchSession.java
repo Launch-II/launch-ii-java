@@ -154,6 +154,10 @@ public abstract class LaunchSession implements TobCommInterface, ConnectionLogge
     public static final int RejectAffiliation = 71;              //An acceptance of a peace treaty from another alliance.
     public static final int DisplayGeneralError = 72;            //A command to display a generic error on the client, for limited accounts suspected of cheating.
     
+    public static final int PlayerNameTooLong = 73; // Player name exceeds maximum length
+    public static final int PlayerNameTooShort = 74; // Player name string is 0 length
+    public static final int AlreadyRegistered = 75; // Player's hash already registered
+    
     private static final int MESSAGE_BUFFER_SIZE = 10240;
     private static final int COMMS_THREAD_SLEEP = 20;
     private static final int ONE_SECOND = 1000;

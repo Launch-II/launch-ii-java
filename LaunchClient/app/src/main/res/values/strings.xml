@@ -477,7 +477,7 @@
 
     <string name="general_error">A general error occurred. Please contact an administrator.</string>
 
-    <string name="connection_settings">Connection Settings:</string>
+    <string name="connection_settings">Connection Settings (Do not change!):</string>
     <string name="server_url">Server URL:</string>
     <string name="tcp_port">TCP Port:</string>
 

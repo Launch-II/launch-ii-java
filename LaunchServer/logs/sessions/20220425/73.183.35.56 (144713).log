@@ -1,0 +1,7 @@
+144713 - Session created.
+144713 - Session thread created.
+144713 - Connection Report: Session got TCP streams.
+144815 - Session timed out. Closing.
+144815 - Session thread finished normally.
+144815 - Session closed after downloading 172B & uploading 9B.
+144902 - Not sending 9 bytes. The session is dead.

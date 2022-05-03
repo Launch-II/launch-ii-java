@@ -9,16 +9,16 @@
   <RespawnProtectionTime>172800000</RespawnProtectionTime>
   <NoobProtectionTime>1209600000</NoobProtectionTime>
   <HourlyWealth>350</HourlyWealth>
-  <CMSSystemCost>1500</CMSSystemCost>
-  <SAMSystemCost>1500</SAMSystemCost>
-  <CMSStructureCost>8000</CMSStructureCost>
-  <NCMSStructureCost>100000</NCMSStructureCost>
-  <SAMStructureCost>8000</SAMStructureCost>
+  <CMSSystemCost>3500</CMSSystemCost>
+  <SAMSystemCost>3500</SAMSystemCost>
+  <CMSStructureCost>7500</CMSStructureCost>
+  <NCMSStructureCost>115000</NCMSStructureCost>
+  <SAMStructureCost>7500</SAMStructureCost>
   <SentryGunStructureCost>1000</SentryGunStructureCost>
-  <OreMineStructureCost>5000</OreMineStructureCost>
+  <OreMineStructureCost>10000</OreMineStructureCost>
   <InterceptorBaseHitChance>0.5</InterceptorBaseHitChance>
-  <RubbleMinValue>0.4</RubbleMinValue>
-  <RubbleMaxValue>0.7</RubbleMaxValue>
+  <RubbleMinValue>0.25</RubbleMinValue>
+  <RubbleMaxValue>0.75</RubbleMaxValue>
   <RubbleMinTime>172800000</RubbleMinTime>
   <RubbleMaxTime>432000000</RubbleMaxTime>
   <StructureSeparation>0.1</StructureSeparation>
@@ -26,40 +26,40 @@
   <StructureBaseHP>200</StructureBaseHP>
   <StructureBootTime>1800000</StructureBootTime>
   <InitialCMSSlots>3</InitialCMSSlots>
-  <InitialSAMSlots>6</InitialSAMSlots>
+  <InitialSAMSlots>3</InitialSAMSlots>
   <RequiredAccuracy>0.25</RequiredAccuracy>
   <MaxRadiationTime>259200000</MaxRadiationTime>
   <MinRadiationTime>86400000</MinRadiationTime>
   <MissileSlotUpgradeBaseCost>250</MissileSlotUpgradeBaseCost>
   <MissileSlotUpgradeCount>3</MissileSlotUpgradeCount>
   <ResaleValue>0.8</ResaleValue>
-  <DecommissionTime>21600000</DecommissionTime>
+  <DecommissionTime>10800000</DecommissionTime>
   <ReloadTimeBase>30000</ReloadTimeBase>
   <ReloadTimeStage1>15000</ReloadTimeStage1>
-  <ReloadTimeStage2>7000</ReloadTimeStage2>
-  <ReloadTimeStage3>3000</ReloadTimeStage3>
+  <ReloadTimeStage2>10000</ReloadTimeStage2>
+  <ReloadTimeStage3>5000</ReloadTimeStage3>
   <ReloadStage1Cost>500</ReloadStage1Cost>
   <ReloadStage2Cost>1000</ReloadStage2Cost>
   <ReloadStage3Cost>1500</ReloadStage3Cost>
   <RepairSalvageDistance>0.1</RepairSalvageDistance>
   <MissileSiteMaintenanceCost>100</MissileSiteMaintenanceCost>
   <SAMSiteMaintenanceCost>75</SAMSiteMaintenanceCost>
-  <SentryGunMaintenanceCost>50</SentryGunMaintenanceCost>
-  <OreMineMaintenanceCost>50</OreMineMaintenanceCost>
-  <ChampionPrize>10000</ChampionPrize>
-  <VeteranPrizeMax>5000</VeteranPrizeMax>
-  <VeteranPrizeMin>500</VeteranPrizeMin>
-  <PointMultiplierFriendlyFire>-2</PointMultiplierFriendlyFire>
-  <PointsPerDamageHP>1.0</PointsPerDamageHP>
-  <PointsThreatManuallyIntercepted>50</PointsThreatManuallyIntercepted>
-  <PointsLootCollected>25</PointsLootCollected>
-  <PointsPlayerKilled>1000</PointsPlayerKilled>
-  <PointsStructureDestroyed>500</PointsStructureDestroyed>
-  <PointsDying>-500</PointsDying>
+  <SentryGunMaintenanceCost>25</SentryGunMaintenanceCost>
+  <OreMineMaintenanceCost>100</OreMineMaintenanceCost>
+  <ChampionPrize>10000</ChampionPrize> //unused -Corbin
+  <VeteranPrizeMax>5000</VeteranPrizeMax> //unused -Corbin
+  <VeteranPrizeMin>500</VeteranPrizeMin> //unused -Corbin
+  <PointMultiplierFriendlyFire>-2</PointMultiplierFriendlyFire> //unused -Corbin
+  <PointsPerDamageHP>1.0</PointsPerDamageHP> //unused -Corbin
+  <PointsThreatManuallyIntercepted>50</PointsThreatManuallyIntercepted> //unused -Corbin
+  <PointsLootCollected>25</PointsLootCollected> //unused -Corbin
+  <PointsPlayerKilled>1000</PointsPlayerKilled> //unused -Corbin
+  <PointsStructureDestroyed>500</PointsStructureDestroyed> //unused -Corbin
+  <PointsDying>-500</PointsDying> //unused -Corbin
   <HealthInterval>900000</HealthInterval>
-  <RadiationInterval>360000</RadiationInterval>
+  <RadiationInterval>240000</RadiationInterval>
   <PlayerRepairCost>100</PlayerRepairCost>
-  <StructureRepairCost>10</StructureRepairCost>
+  <StructureRepairCost>25</StructureRepairCost>
   <AWOLTime>604800000</AWOLTime>
   <RemoveTime>1209600000</RemoveTime>
   <NukeUpgradeCost>10000000</NukeUpgradeCost>
@@ -72,13 +72,13 @@
   <ECMInterceptorChanceReduction>0.2</ECMInterceptorChanceReduction>
   <ManualInterceptorChanceIncrease>0.1</ManualInterceptorChanceIncrease>
   <SentryGunReloadTime>3000</SentryGunReloadTime>
-  <SentryGunRange>0.8</SentryGunRange>
+  <SentryGunRange>1.5</SentryGunRange>
   <SentryGunHitChance>0.3</SentryGunHitChance>
   <OreMineRadius>4.0</OreMineRadius>
-  <OreCollectRadius>1.0</OreCollectRadius>
+  <OreCollectRadius>0.8</OreCollectRadius>
   <OreCompeteRadius>10.0</OreCompeteRadius>
-  <MaxOreValue>5000</MaxOreValue>
-  <OreMineGenerateTime>1800000</OreMineGenerateTime>
+  <MaxOreValue>4000</MaxOreValue>
+  <OreMineGenerateTime>2700000</OreMineGenerateTime>
   <OreMinExpiry>14400000</OreMinExpiry>
   <OreMaxExpiry>57600000</OreMaxExpiry>
   <MissileSpeedIndexCost>100</MissileSpeedIndexCost>
@@ -102,8 +102,8 @@
   <HourlyBonusDefenderOfTheNation>50</HourlyBonusDefenderOfTheNation>
   <HourlyBonusNuclearSuperpower>200</HourlyBonusNuclearSuperpower>
   <HourlyBonusWeeklyKillsBatch>200</HourlyBonusWeeklyKillsBatch>
-  <HourlyBonusSurvivor>50</HourlyBonusSurvivor>
-  <HourlyBonusHippy>150</HourlyBonusHippy>
+  <HourlyBonusSurvivor>300</HourlyBonusSurvivor>
+  <HourlyBonusHippy>50</HourlyBonusHippy>
   <HourlyBonusPeaceMaker>10</HourlyBonusPeaceMaker>
   <HourlyBonusWarMonger>100</HourlyBonusWarMonger>
   <HourlyBonusLoneWolf>50</HourlyBonusLoneWolf>
@@ -293,11 +293,11 @@
     <MissileType ID="11" Name="Jericho II">
       <AssetID>20</AssetID>
       <Purchasable>true</Purchasable>
-      <SpeedIndex>9</SpeedIndex>
-      <MissileCost>10000</MissileCost>
+      <SpeedIndex>6</SpeedIndex>
+      <MissileCost>20000</MissileCost>
       <BlastRadiusIndex>3</BlastRadiusIndex>
       <RangeIndex>7</RangeIndex>
-      <MaxDamageIndex>4</MaxDamageIndex>
+      <MaxDamageIndex>6</MaxDamageIndex>
       <Nuclear>false</Nuclear>
       <Tracking>false</Tracking>
       <ECM>false</ECM>
@@ -308,6 +308,7 @@
       <AssetID>11</AssetID>
       <Purchasable>true</Purchasable>
       <InterceptorCost>1000</InterceptorCost>
+      <HitChance>0.8</HitChance>
       <SpeedIndex>4</SpeedIndex>
       <RangeIndex>4</RangeIndex>
     </InterceptorType>
@@ -315,6 +316,7 @@
       <AssetID>11</AssetID>
       <Purchasable>true</Purchasable>
       <InterceptorCost>800</InterceptorCost>
+      <HitChance>0.8</HitChance>
       <SpeedIndex>3</SpeedIndex>
       <RangeIndex>3</RangeIndex>
     </InterceptorType>
@@ -322,6 +324,7 @@
       <AssetID>11</AssetID>
       <Purchasable>true</Purchasable>
       <InterceptorCost>400</InterceptorCost>
+      <HitChance>0.8</HitChance>
       <SpeedIndex>1</SpeedIndex>
       <RangeIndex>1</RangeIndex>
     </InterceptorType>
@@ -329,13 +332,15 @@
       <AssetID>11</AssetID>
       <Purchasable>true</Purchasable>
       <InterceptorCost>600</InterceptorCost>
+      <HitChance>0.8</HitChance>
       <SpeedIndex>2</SpeedIndex>
       <RangeIndex>2</RangeIndex>
     </InterceptorType>
-    <InterceptorType ID="35" Name="ABM GBI">
+    <InterceptorType ID="35" Name="Anti-Ballistic Missile">
       <AssetID>21</AssetID>
       <Purchasable>true</Purchasable>
       <InterceptorCost>15000</InterceptorCost>
+      <HitChance>0.4</HitChance>
       <SpeedIndex>5</SpeedIndex>
       <RangeIndex>5</RangeIndex>
     </InterceptorType>

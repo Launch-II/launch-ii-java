@@ -17,7 +17,7 @@ android {
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 94
-        versionName "34.0"
+        versionName "35.0"
         signingConfig signingConfigs.debug
     }
     buildTypes {

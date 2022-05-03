@@ -218,7 +218,35 @@ public class LaunchServerSession extends LaunchSession
                 String strIdentity = Security.BytesToHexString(cDeviceID);
                 String strPlayerName = LaunchUtilities.StringFromData(bb);
                 int lAvatarID = bb.getInt();
-             
+                
+                if(strPlayerName.isEmpty())
+                {
+                    LaunchLog.ConsoleMessage("Empty");
+                    LaunchLog.ConsoleMessage(strIdentity);
+                    LaunchLog.ConsoleMessage(String.valueOf(lAvatarID));
+                }
+                else
+                {
+                    LaunchLog.ConsoleMessage(strPlayerName);
+                    LaunchLog.ConsoleMessage(strIdentity);
+                    LaunchLog.ConsoleMessage(String.valueOf(lAvatarID));
+                }
+                if (strPlayerName.length() > Defs.MAX_PLAYER_NAME_LENGTH)
+                {
+                    tobComm.SendCommand(PlayerNameTooLong);
+                }
+                if (strPlayerName.length() == 0)
+                {
+                    tobComm.SendCommand(PlayerNameTooShort);
+                }
+                if (!gameInterface.CheckPlayerNameAvailable(strPlayerName))
+                {
+                    tobComm.SendCommand(NameTaken);
+                }
+                if (gameInterface.VerifyID(strIdentity) != null)
+                {
+                    tobComm.SendCommand(AlreadyRegistered);
+                }
                 if(strPlayerName.length() <= Defs.MAX_PLAYER_NAME_LENGTH &&
                    strPlayerName.length() > 0 &&
                    gameInterface.CheckPlayerNameAvailable(strPlayerName) &&
@@ -233,11 +261,6 @@ public class LaunchServerSession extends LaunchSession
                         newUser.Proscribe();
                         gameInterface.NotifyIPProscribed(newUser);
                     }
-                }
-                else
-                {
-                    //Player name taken.
-                    tobComm.SendCommand(NameTaken);
                 }
             }
             break;

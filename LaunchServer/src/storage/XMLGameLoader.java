@@ -221,10 +221,11 @@ public class XMLGameLoader
                     int lAssetID = GetIntElement(ndeInterceptorType, XMLDefs.ASSET_ID);
                     boolean bPurchasable = GetBooleanElement(ndeInterceptorType, XMLDefs.PURCHASABLE);
                     int cInterceptorCost = GetIntElement(ndeInterceptorType, XMLDefs.INTERCEPTOR_COST);
+                    float cInterceptorHitChance = GetFloatElement(ndeInterceptorType, XMLDefs.INTERCEPTOR_HIT_CHANCE);
                     byte cSpeedIndex = GetByteElement(ndeInterceptorType, XMLDefs.SPEED_INDEX);
                     byte cRangeIndex = GetByteElement(ndeInterceptorType, XMLDefs.RANGE_INDEX);
                     
-                    config.AddInterceptorType(cID, new InterceptorType(cID, bPurchasable, strName, lAssetID, cInterceptorCost, cSpeedIndex, cRangeIndex));
+                    config.AddInterceptorType(cID, new InterceptorType(cID, bPurchasable, strName, lAssetID, cInterceptorCost, cInterceptorHitChance, cSpeedIndex, cRangeIndex));
                 }
                 catch(Exception ex)
                 {

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Game>
+    <Users>
+        <User Name="Aggressive Menace">
+            <IMEI>BE58DC73B330F9471BF10B4C4CE499DAA8F8A947FCA79AD1D4078CC417A7C0DB</IMEI>
+            <PlayerID>0</PlayerID>
+            <BanState>0</BanState>
+            <NextBanTime>3600000</NextBanTime>
+            <BanDurationRemaining>0</BanDurationRemaining>
+            <BanReason/>
+            <LastIP>107.116.14.194</LastIP>
+            <LastConnectionMobile>false</LastConnectionMobile>
+            <LastChecked>1651544722765</LastChecked>
+            <LastCheckFailed>false</LastCheckFailed>
+            <CheckAPIFailed>false</CheckAPIFailed>
+            <Proscribed>false</Proscribed>
+            <CheckFailCode>0</CheckFailCode>
+            <ProfileMatch>true</ProfileMatch>
+            <BasicIntegrity>true</BasicIntegrity>
+            <Approved>false</Approved>
+            <Expired>0</Expired>
+            <DeviceHash>A77A11AB</DeviceHash>
+            <AppListHash>9CAF2B35</AppListHash>
+            <Reports/>
+        </User>
+    </Users>
+    <Alliances/>
+    <Treaties/>
+    <Players>
+        <Player ID="0" Name="Aggressive Menace">
+            <Position>
+                <Latitude>41.393414</Latitude>
+                <Longitude>-84.12215</Longitude>
+            </Position>
+            <HP>200</HP>
+            <MaxHP>200</MaxHP>
+            <Avatar>0</Avatar>
+            <Wealth>100000</Wealth>
+            <LastSeen>1651545417363</LastSeen>
+            <StateChange>158619000</StateChange>
+            <AllianceID>-1</AllianceID>
+            <Flags1>-128</Flags1>
+            <Flags2>0</Flags2>
+            <AllianceCooloffTime>0</AllianceCooloffTime>
+            <Kills>0</Kills>
+            <Deaths>0</Deaths>
+            <OffenceSpending>0</OffenceSpending>
+            <DefenceSpending>0</DefenceSpending>
+            <DamageInflicted>0</DamageInflicted>
+            <DamageReceived>0</DamageReceived>
+        </Player>
+    </Players>
+    <Missiles/>
+    <Interceptors/>
+    <MissileSites/>
+    <SAMSites/>
+    <SentryGuns/>
+    <OreMines/>
+    <Loots/>
+    <Radiations/>
+</Game>
